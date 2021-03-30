@@ -519,7 +519,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CUSTOMIZE
+  m_Text: EXPLORE
 --- !u!222 &550808225
 CanvasRenderer:
   m_ObjectHideFlags: 0
