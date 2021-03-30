@@ -829,7 +829,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 8dbaf49dadb06e64d856d52640aa1243, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8309c07ea6317004881504d587865846, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2914,7 +2914,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!224 &1506912865
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2924,7 +2924,7 @@ RectTransform:
   m_GameObject: {fileID: 1506912862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 3}
   m_Children:
   - {fileID: 1268121410}
   - {fileID: 831980748}
