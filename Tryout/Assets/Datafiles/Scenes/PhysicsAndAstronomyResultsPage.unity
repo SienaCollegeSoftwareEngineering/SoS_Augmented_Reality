@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 504922106}
   - component: {fileID: 504922105}
   m_Layer: 5
-  m_Name: CS
+  m_Name: department
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1161,7 +1161,7 @@ GameObject:
   - component: {fileID: 913982765}
   - component: {fileID: 913982764}
   m_Layer: 5
-  m_Name: DocBreimer
+  m_Name: chairName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1586,7 +1586,7 @@ GameObject:
   - component: {fileID: 1396548681}
   - component: {fileID: 1396548680}
   m_Layer: 5
-  m_Name: BreimerImg
+  m_Name: chairImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2009,7 +2009,7 @@ GameObject:
   - component: {fileID: 1870298108}
   - component: {fileID: 1870298107}
   m_Layer: 5
-  m_Name: DeptHeading
+  m_Name: chairHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
