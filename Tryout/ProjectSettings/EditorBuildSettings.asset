@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Datafiles/Scenes/CameraScreen.unity
     guid: 75d780160d9fb6b4a8c1d29b7b64f5c4
   - enabled: 1
-    path: Assets/Datafiles/Scenes/CustomizeScreen.unity
-    guid: 5d688483641f11f429e044c6a79951b2
-  - enabled: 1
     path: Assets/Datafiles/Scenes/MapScreen.unity
     guid: 2f5484286a51eb34d818884d86ec9e34
   - enabled: 1
@@ -26,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Datafiles/Scenes/InfoScreenRB328.unity
     guid: 8e565d8ea821dd94c9f5568a85af9613
+  - enabled: 1
+    path: Assets/Datafiles/Scenes/ExploreScreen.unity
+    guid: d7e3be56df6b6e3499ceb1e240291b42
+  - enabled: 1
+    path: Assets/Datafiles/Scenes/CSResultsPage.unity
+    guid: a68a7c064cf6e2d489df20132aa42b08
   m_configObjects: {}
