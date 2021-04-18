@@ -15,7 +15,7 @@ using UnityEngine.SceneManagement;
 public class ChooseMajor : MonoBehaviour
 {
     //global static variable
-    public static string majorName = "";
+    public static string initalMajorName = "";
     //array of check mark objects from radio button objects in here
     public GameObject[] buttonCheckMarks;
     //array of unity events for each check mark object to execute(similar to OnClick from buttons)
@@ -36,7 +36,7 @@ public class ChooseMajor : MonoBehaviour
         {
             //executes events(button OnClick section) and changes global variable
             sceneScriptList[2].Invoke();
-            majorName = "ComputerScience";
+            initalMajorName = "ComputerScience";
         }
     }
 }
