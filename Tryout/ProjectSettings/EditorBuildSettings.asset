@@ -18,11 +18,23 @@ EditorBuildSettings:
     path: Assets/Datafiles/Scenes/InfoScreen.unity
     guid: dc0cdb037ab9a824789df10c1f3afadf
   - enabled: 1
+    path: Assets/Datafiles/Scenes/BiologyResultsPage.unity
+    guid: 2384a8ca804634743a2f55999d3c110c
+  - enabled: 1
+    path: Assets/Datafiles/Scenes/CongratulationsScreen.unity
+    guid: 3a9419a0ae7042340bb3b5754bd36101
+  - enabled: 1
     path: Assets/Datafiles/Scenes/FAQScreen.unity
     guid: 7c6adfc301829544cb85f08fee2cb712
   - enabled: 1
+    path: Assets/Datafiles/Scenes/ScavHuntCSClue1.unity
+    guid: 3ef2918ba1aef2c46bc5d5301f1471fb
+  - enabled: 1
     path: Assets/Datafiles/Scenes/InfoScreenRB328.unity
     guid: 8e565d8ea821dd94c9f5568a85af9613
+  - enabled: 1
+    path: Assets/Datafiles/Scenes/ScavHuntCSClue2.unity
+    guid: bf935f82416b7c24ba4c46b25be5b6eb
   - enabled: 1
     path: Assets/Datafiles/Scenes/ExploreScreen.unity
     guid: d7e3be56df6b6e3499ceb1e240291b42

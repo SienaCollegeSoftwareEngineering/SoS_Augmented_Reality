@@ -20,7 +20,7 @@ public class CustomizeButtonScript : MonoBehaviour
 
     public void StartGame(string levelName)
     {
-        SceneManager.LoadScene("CustomizeScreen", LoadSceneMode.Single);
+        //SceneManager.LoadScene("CustomizeScreen", LoadSceneMode.Single);
 
     }
 }
