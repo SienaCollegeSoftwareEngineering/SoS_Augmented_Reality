@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CameraScreen.unity
+    guid: 1c3b1aee16ec544a2bc11ef54fcd3e78
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 63ffb753bdf634cb3a00c7d1c16a0682
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
