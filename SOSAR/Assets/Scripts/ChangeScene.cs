@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public void loadCameraScene()
+    public void LoadCameraScene()
     {
         SceneManager.LoadScene("CameraScreen");
     }
 
-    public void exitApp()
+    public void ExitApp()
     {
         Application.Quit();
         Debug.Log("App has been quit.");
