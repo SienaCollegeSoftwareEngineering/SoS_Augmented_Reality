@@ -7,6 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     public void LoadCameraScene()
     {
+        Debug.Log("Load Camera Scene");
         SceneManager.LoadScene("CameraScreen");
     }
 
