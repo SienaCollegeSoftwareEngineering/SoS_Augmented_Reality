@@ -61,3 +61,5 @@ sysinfo.txt
 crashlytics-build.properties
 
 .DS_Store
+
+*.tgz
