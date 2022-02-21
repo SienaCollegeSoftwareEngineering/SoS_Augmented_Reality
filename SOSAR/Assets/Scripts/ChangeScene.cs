@@ -21,4 +21,10 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScreen");
 }
+    public void LoadInfoScene()
+    {
+        Debug.Log("Load Info Scene");
+        SceneManager.LoadScene("InfoScreen");
+    }
+
 }
