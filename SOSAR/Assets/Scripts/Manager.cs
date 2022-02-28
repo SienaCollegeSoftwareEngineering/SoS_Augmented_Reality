@@ -12,10 +12,10 @@ public class Manager : MonoBehaviour
     void Start()
     {
         // A correct website page.
-        StartCoroutine(GetRequest("https://www.example.com"));
+        StartCoroutine(GetRequest("http://openweathermap.org/api"));
 
-        // A non-existing page.
-        StartCoroutine(GetRequest("https://error.html"));
+        // // A non-existing page.
+        // StartCoroutine(GetRequest("https://error.html"));
     }
 
     IEnumerator GetRequest(string uri)
