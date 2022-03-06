@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
+using Newtonsoft.Json;
+using System.Text;
 
 // UnityWebRequest.Get example
 
@@ -12,9 +14,9 @@ public class Manager : MonoBehaviour
     void Start()
     {
         // A correct website page.
-        StartCoroutine(GetRequest("http://openweathermap.org/api"));
-
-        // // A non-existing page.
+        
+        StartCoroutine(GetRequest("api.openweathermap.org/data/2.5/weather?lat=42.7188&lon=73.7510&appid=22f5b802765d94bb090be2f232637dc4"));
+       
         // StartCoroutine(GetRequest("https://error.html"));
     }
 
@@ -41,6 +43,21 @@ public class Manager : MonoBehaviour
                     Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
                     break;
             }
+            Parse(webRequest.downloadHandler.text);
         }
     }
+        void Parse(string data){
+            JsonTextReader reader = new JsonTextReader(new //StringReader(json));
+            while (reader.Read())
+            {
+                if (reader.Value != null)
+                {
+                    //get"Token: {0}, Value: {1}", reader.TokenType, reader.Value);
+                }
+                else
+                {
+                    //get("Token: {0}", reader.TokenType);
+                }
+            }
+            }
 }
