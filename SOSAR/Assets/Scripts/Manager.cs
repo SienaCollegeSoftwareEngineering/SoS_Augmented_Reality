@@ -2,12 +2,9 @@ using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 using Newtonsoft.Json;
+using System.IO;
 using System.Text;
 
-// UnityWebRequest.Get example
-
-// Access a website and use UnityWebRequest.Get to download a page.
-// Also try to download a non-existing page. Display the error.
 
 public class Manager : MonoBehaviour
 {
@@ -16,8 +13,6 @@ public class Manager : MonoBehaviour
         // A correct website page.
         
         StartCoroutine(GetRequest("api.openweathermap.org/data/2.5/weather?lat=42.7188&lon=73.7510&appid=22f5b802765d94bb090be2f232637dc4"));
-       
-        // StartCoroutine(GetRequest("https://error.html"));
     }
 
     IEnumerator GetRequest(string uri)
@@ -47,16 +42,16 @@ public class Manager : MonoBehaviour
         }
     }
         void Parse(string data){
-            JsonTextReader reader = new JsonTextReader(new //StringReader(json));
+            JsonTextReader reader = new JsonTextReader(new StringReader(data));
             while (reader.Read())
             {
                 if (reader.Value != null)
                 {
-                    //get"Token: {0}, Value: {1}", reader.TokenType, reader.Value);
+                    //put data into correct variable
                 }
                 else
                 {
-                    //get("Token: {0}", reader.TokenType);
+                    //stop
                 }
             }
             }
