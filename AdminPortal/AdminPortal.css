@@ -1,0 +1,118 @@
+
+
+body
+{
+    background-color: black;
+    /*background-image: url("placeHolderPic2.jpeg");*/
+   /* background: rgba(0, 0, 0, 0.35) url('placeHolderPic2.jpeg');
+    /*width: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+    /*background-size: 100%;
+    background-blend-mode: darken;
+    backdrop-filter: blur(7px);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    
+}
+
+#background
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(75%) blur(7px);
+
+}
+
+
+#container
+{
+    width: 100vw;
+    
+    /*backdrop-filter: blur(7px);*/
+    margin-top: 20px;
+    position: relative;
+    
+    
+    
+}
+
+#container, body
+{
+    /*backdrop-filter: blur(7px);*/
+}
+
+
+.field, .field *
+{
+    background: none;
+    color: white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    margin: auto;
+    border-bottom-color: white;
+}
+
+
+
+#inputFields
+{
+    margin: auto;
+    width: 15%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.66; /* Firefox */
+}
+
+
+#topHeader
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 50%;
+    text-align: center;
+    color: white;
+    
+}
+
+#topHeader h1
+{
+    font-weight: 300;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+#sub
+{
+    border-radius: 10px;
+    background: none;
+    padding: 5px;
+    color: white;
+    margin: auto;
+    width: 100%;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+
+}
+#sub, .field, .field *
+{
+    font-size: 20px;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+}
