@@ -10,6 +10,9 @@ using TMPro;
 public class Manager : MonoBehaviour
 {
      private TMP_Text m_TextComponent;
+
+     //I know this looks bad but I don't know exactly how the data comes in from the new database
+     public StringBuilder allData;
     void Start()
     {
         // A correct website page.
@@ -49,15 +52,8 @@ public class Manager : MonoBehaviour
             {
                 if (reader.Value != null)
                 {
-                    if(reader.Value.Equals("description")){
-                        reader.Read();
-                        
+                        allData.Append(reader.Value);
                     }
                 }
-                else
-                {
-                    //stop
-                }
-            }
             }
 }
