@@ -4,10 +4,12 @@ using System.Collections;
 using Newtonsoft.Json;
 using System.IO;
 using System.Text;
+using TMPro;
 
 
 public class Manager : MonoBehaviour
 {
+     private TMP_Text m_TextComponent;
     void Start()
     {
         // A correct website page.
@@ -47,7 +49,10 @@ public class Manager : MonoBehaviour
             {
                 if (reader.Value != null)
                 {
-                    //put data into correct variable
+                    if(reader.Value.Equals("description")){
+                        reader.Read();
+                        
+                    }
                 }
                 else
                 {
