@@ -27,7 +27,7 @@ body
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    filter: brightness(75%) blur(7px);
+    filter: brightness(85%) blur(6px);
 
 }
 
@@ -44,10 +44,6 @@ body
     
 }
 
-#container, body
-{
-    /*backdrop-filter: blur(7px);*/
-}
 
 
 .field, .field *
@@ -67,7 +63,8 @@ body
 #inputFields
 {
     margin: auto;
-    width: 15%;
+    width: 250px;
+    text-align: center;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -101,7 +98,7 @@ input:focus
 #sub
 {
     border-radius: 10px;
-    background: none;
+    background-color: rgba(255, 255, 255, 0.15);
     padding: 5px;
     color: white;
     margin: auto;
@@ -109,10 +106,16 @@ input:focus
     border-color: white;
     border-style: solid;
     border-width: 3px;
+    width: 200px;
 
 }
 #sub, .field, .field *
 {
     font-size: 20px;
     font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+#sub:hover
+{
+    background-color: rgba(255, 255, 255, 0.22);
 }
