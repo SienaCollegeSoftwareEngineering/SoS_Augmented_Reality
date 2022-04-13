@@ -3,15 +3,9 @@
 body
 {
     background-color: black;
-    /*background-image: url("placeHolderPic2.jpeg");*/
-   /* background: rgba(0, 0, 0, 0.35) url('placeHolderPic2.jpeg');
-    /*width: 100%;*/
     margin-left: auto;
     margin-right: auto;
     font-family: Avenir, Arial, Helvetica, sans-serif;
-    /*background-size: 100%;
-    background-blend-mode: darken;
-    backdrop-filter: blur(7px);*/
     position: absolute;
     top: 0;
     left: 0;
@@ -35,8 +29,6 @@ body
 #container
 {
     width: 100vw;
-    
-    /*backdrop-filter: blur(7px);*/
     margin-top: 20px;
     position: relative;
     
