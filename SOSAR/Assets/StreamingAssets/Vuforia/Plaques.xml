@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+<QCARConfig>
   <Tracking>
+    <ImageTarget name="RB212" size="1.000000 0.994255" />
+    <ImageTarget name="RB223" size="1.000000 0.977409" />
+    <ImageTarget name="RB221" size="1.000000 0.991432" />
+    <ImageTarget name="RB224A" size="1.000000 1.000000" />
+    <ImageTarget name="RB204" size="1.000000 0.988705" />
+    <ImageTarget name="RB224" size="1.000000 0.979776" />
+    <ImageTarget name="RB222" size="1.000000 0.991358" />
+    <ImageTarget name="RB219" size="1.000000 0.974657" />
+    <ImageTarget name="RB226" size="1.000000 0.997136" />
+    <ImageTarget name="RB202" size="1.000000 0.985999" />
+    <ImageTarget name="RB230" size="1.000000 0.985719" />
+    <ImageTarget name="RB256" size="1.000000 1.008618" />
+    <ImageTarget name="RB236" size="1.000000 0.983246" />
+    <ImageTarget name="RB227" size="1.000000 0.991504" />
+    <ImageTarget name="RB231" size="1.000000 0.985678" />
+    <ImageTarget name="RB240" size="1.000000 1.005795" />
+    <ImageTarget name="RB225" size="1.000000 1.000000" />
+    <ImageTarget name="RB229" size="1.000000 1.017039" />
+    <ImageTarget name="RB254" size="1.000000 0.997086" />
+    <ImageTarget name="RB235" size="1.000000 0.986154" />
+    <ImageTarget name="RB_340" size="1.000000 1.000000" />
+    <ImageTarget name="RB_338" size="1.000000 0.750000" />
+    <ImageTarget name="RB319" size="1.000000 0.985980" />
+    <ImageTarget name="RB328" size="1.000000 0.995411" />
+    <ImageTarget name="RB315" size="1.000000 0.992890" />
+    <ImageTarget name="RB326" size="1.000000 0.997940" />
+    <ImageTarget name="RB311" size="1.000000 0.990822" />
+    <ImageTarget name="RB316" size="1.000000 0.993289" />
+    <ImageTarget name="RB314" size="1.000000 1.002370" />
+    <ImageTarget name="RB324" size="1.000000 1.034880" />
+    <ImageTarget name="RB320" size="1.000000 0.990301" />
+    <ImageTarget name="RB318" size="1.000000 0.997248" />
+    <ImageTarget name="RB322330" size="1.000000 0.750000" />
+    <ImageTarget name="RB313" size="1.000000 0.986325" />
+    <ImageTarget name="RB_312" size="0.152400 0.150327" />
+    <ImageTarget name="RB308" size="1.000000 0.996732" />
+    <ImageTarget name="RB306" size="1.000000 0.983813" />
+    <ImageTarget name="RB302" size="1.000000 0.985765" />
+    <ImageTarget name="RB304" size="1.000000 0.979203" />
+    <ImageTarget name="RB_348" size="1.000000 0.988543" />
+    <ImageTarget name="RB321" size="1.000000 0.985960" />
+    <ImageTarget name="RB323" size="1.000000 1.005696" />
+    <ImageTarget name="RB350" size="1.000000 0.988923" />
+    <ImageTarget name="RB317" size="1.000000 0.982514" />
     <ImageTarget name="RB434" size="1.000000 0.750000" />
     <ImageTarget name="RB428" size="1.000000 0.750000" />
     <ImageTarget name="RB425" size="1.000000 0.750000" />
@@ -13,20 +57,6 @@
     <ImageTarget name="RB411" size="1.000000 0.750000" />
     <ImageTarget name="RB409" size="1.000000 0.750000" />
     <ImageTarget name="RB404" size="1.000000 0.750000" />
-    <ImageTarget name="RB350" size="1.000000 0.750000" />
-    <ImageTarget name="RB328" size="1.000000 0.750000" />
-    <ImageTarget name="RB326" size="1.000000 0.750000" />
-    <ImageTarget name="RB323" size="1.000000 0.750000" />
-    <ImageTarget name="RB319" size="1.000000 0.750000" />
-    <ImageTarget name="RB315" size="1.000000 0.750000" />
-    <ImageTarget name="RB313" size="1.000000 0.750000" />
-    <ImageTarget name="RB311" size="1.000000 0.750000" />
-    <ImageTarget name="RB308" size="1.000000 0.750000" />
-    <ImageTarget name="RB306" size="1.000000 0.750000" />
-    <ImageTarget name="RB304" size="1.000000 0.750000" />
-    <ImageTarget name="RB302" size="1.000000 0.750000" />
-    <ImageTarget name="RB230" size="1.000000 0.750000" />
-    <ImageTarget name="RB202" size="1.000000 0.750000" />
     <ImageTarget name="RB152" size="1.000000 0.750000" />
     <ImageTarget name="RB448" size="1.000000 0.750000" />
     <ImageTarget name="RB444" size="1.000000 0.750000" />
@@ -42,37 +72,11 @@
     <ImageTarget name="RB405" size="1.000000 0.750000" />
     <ImageTarget name="RB403" size="1.000000 0.750000" />
     <ImageTarget name="RB401" size="1.000000 0.750000" />
-    <ImageTarget name="RB316" size="1.000000 0.750000" />
-    <ImageTarget name="RB324" size="1.000000 0.750000" />
-    <ImageTarget name="RB322330" size="1.000000 0.750000" />
-    <ImageTarget name="RB321" size="1.000000 0.750000" />
-    <ImageTarget name="RB320" size="1.000000 0.750000" />
-    <ImageTarget name="RB318" size="1.000000 0.750000" />
-    <ImageTarget name="RB317" size="1.000000 0.750000" />
-    <ImageTarget name="RB314" size="1.000000 0.750000" />
-    <ImageTarget name="RB256" size="1.000000 1.333333" />
-    <ImageTarget name="RB254" size="1.000000 1.333333" />
     <ImageTarget name="RB250" size="1.000000 1.333333" />
     <ImageTarget name="RB248-252" size="1.000000 1.333333" />
-    <ImageTarget name="RB240" size="1.000000 1.333333" />
     <ImageTarget name="RB238" size="1.000000 1.333333" />
-    <ImageTarget name="RB236" size="1.000000 1.333333" />
-    <ImageTarget name="RB235" size="1.000000 1.333333" />
-    <ImageTarget name="RB231" size="1.000000 1.333333" />
-    <ImageTarget name="RB229" size="1.000000 1.333333" />
-    <ImageTarget name="RB227" size="1.000000 1.333333" />
-    <ImageTarget name="RB226" size="1.000000 1.333333" />
-    <ImageTarget name="RB225" size="1.000000 1.333333" />
-    <ImageTarget name="RB224A" size="1.000000 1.333333" />
-    <ImageTarget name="RB224" size="1.000000 1.333333" />
-    <ImageTarget name="RB223" size="1.000000 1.333333" />
-    <ImageTarget name="RB222" size="1.000000 1.333333" />
-    <ImageTarget name="RB221" size="1.000000 1.333333" />
-    <ImageTarget name="RB219" size="1.000000 1.333333" />
-    <ImageTarget name="RB212" size="1.000000 1.333333" />
     <ImageTarget name="RB210" size="1.000000 1.333333" />
     <ImageTarget name="RB208" size="1.000000 1.333333" />
-    <ImageTarget name="RB204" size="1.000000 1.333333" />
     <ImageTarget name="RB150" size="1.000000 1.333333" />
     <ImageTarget name="RB144" size="1.000000 1.333333" />
     <ImageTarget name="RB142" size="1.000000 1.333333" />
