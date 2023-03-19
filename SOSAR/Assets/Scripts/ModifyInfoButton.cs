@@ -34,7 +34,7 @@ public class ModifyInfoButton : MonoBehaviour
         switch(global_PlaqueInfo) {
             #region Roger Bacon (RB)
             case "RB350":
-                global_TextForNewScene = "This is Roger Bacon 350. It is the open lab where you can come to do homework and study. You might also have a class or exam in here.";
+                global_TextForNewScene = "<color=#1ab2c5><align=\"center\">This is Roger Bacon 350. </color></align><br>It is the open lab where you can come to do homework and study. You might also have a class or exam in here.";
             break;
             case "RB348":
                 global_TextForNewScene = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis turpis nec velit iaculis euismod sit amet quis magna. Nullam venenatis pellentesque nunc, vel ultrices felis auctor egestas. Donec auctor lobortis neque, non tristique justo euismod non. Cras vestibulum, quam sed iaculis tincidunt, sapien quam eleifend diam, eu sodales lacus neque non ex. Suspendisse hendrerit neque nec rutrum finibus. Sed aliquam, elit vitae accumsan condimentum, nunc ante bibendum lacus, ut efficitur sem erat quis nibh. Pellentesque turpis erat, viverra ut ornare nec, interdum quis odio. Maecenas et metus id mauris fringilla eleifend. Mauris lacinia sed risus ut tincidunt. Nullam molestie enim diam, at bibendum erat dapibus eu. In egestas lobortis efficitur. Integer a lacus feugiat, malesuada lacus et, semper metus.";

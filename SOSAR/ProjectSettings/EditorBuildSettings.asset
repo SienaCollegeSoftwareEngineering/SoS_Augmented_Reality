@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InfoScreen.unity
     guid: 1a0ad25f6ccd0455fafba7debbdb29e6
+  - enabled: 1
+    path: Assets/Scenes/More Info Scene.unity
+    guid: f9657d13699cc08488e7bd32ba33951b
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
