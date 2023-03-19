@@ -27,12 +27,12 @@ public class ModifyInfoButton : MonoBehaviour
         Debug.Log("Going to " + global_PlaqueInfo);
         changeTextForNewScene();
         SceneManager.LoadScene("More Info Scene");
-        
     }
 
     public void changeTextForNewScene() {
         switch(global_PlaqueInfo) {
             #region Roger Bacon (RB)
+            // 3rd floor
             case "RB350":
                 global_TextForNewScene = "<color=#1ab2c5><align=\"center\">This is Roger Bacon 350. </color></align><br>It is the open lab where you can come to do homework and study. You might also have a class or exam in here.";
             break;
@@ -108,6 +108,80 @@ public class ModifyInfoButton : MonoBehaviour
             case "RB302":
                 global_TextForNewScene = "RB302";
             break;
+            // 2nd Floor
+            case "RB256":
+                global_TextForNewScene = "RB256";
+            break;
+            case "RB254":
+                global_TextForNewScene = "RB254";
+            break;
+            case "RB248":
+                global_TextForNewScene = "RB248";
+            break;
+            case "RB240":
+                global_TextForNewScene = "RB240";
+            break;
+            case "RB238":
+                global_TextForNewScene = "RB238";
+            break;
+            case "RB236":
+                global_TextForNewScene = "RB236";
+            break;
+            case "RB235":
+                global_TextForNewScene = "RB235";
+            break;
+            case "RB231":
+                global_TextForNewScene = "RB231";
+            break;
+            case "RB230":
+                global_TextForNewScene = "RB230";
+            break;
+            case "RB229":
+                global_TextForNewScene = "RB229";
+            break;
+            case "RB227":
+                global_TextForNewScene = "RB227";
+            break;
+            case "RB226":
+                global_TextForNewScene = "RB226";
+            break;
+            case "RB225":
+                global_TextForNewScene = "RB225";
+            break;
+            case "RB224A":
+                global_TextForNewScene = "RB224A";
+            break;
+            case "RB224":
+                global_TextForNewScene = "RB224";
+            break;
+            case "RB223":
+                global_TextForNewScene = "RB223";
+            break;
+            case "RB222":
+                global_TextForNewScene = "RB222";
+            break;
+            case "RB221":
+                global_TextForNewScene = "RB221";
+            break;
+            case "RB219":
+                global_TextForNewScene = "RB219";
+            break;
+            case "RB212":
+                global_TextForNewScene = "RB212";
+            break;
+            case "RB210":
+                global_TextForNewScene = "RB210";
+            break;
+            case "RB208":
+                global_TextForNewScene = "RB208";
+            break;
+            case "RB204":
+                global_TextForNewScene = "RB204";
+            break;
+            case "RB202":
+                global_TextForNewScene = "RB202";
+            break;
+
             #endregion
 
             #region Siena Hall (SH)
