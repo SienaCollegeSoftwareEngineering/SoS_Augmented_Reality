@@ -10,6 +10,7 @@ public class ImmediatelyChangeText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // if 
         _text = GameObject.Find("Content").GetComponent<TMP_Text>();
         _text.text = ModifyInfoButton.global_TextForNewScene;
     }

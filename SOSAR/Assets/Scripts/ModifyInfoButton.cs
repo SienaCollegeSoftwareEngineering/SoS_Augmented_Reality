@@ -19,8 +19,14 @@ public class ModifyInfoButton : MonoBehaviour
         global_PlaqueInfo = plaqueInfo;
         Debug.Log(global_PlaqueInfo);
         newText = GameObject.Find("InfoButtonText").GetComponent<TMP_Text>();
-        newText.text = global_PlaqueInfo;
+        newText.text = "More info";
         Debug.Log(newText.text);
+    }
+
+    public void disableButton() {
+        global_PlaqueInfo = "Waiting...";
+        newText.text = "Waiting...";
+        moreInfoButton.interactable = false;
     }
 
     public void goToMoreInfoRoom() {
@@ -29,6 +35,15 @@ public class ModifyInfoButton : MonoBehaviour
         SceneManager.LoadScene("More Info Scene");
     }
 
+
+    /*
+    * For professor names: <align=\"center\"><color=#006B54><size=28px> text </size></color></align>
+    * For headings: <align=\"center\"><color=#006B54><size=26px> text </size></color></align>
+    * For content: <color=>
+    *
+    *
+    *
+    */
     public void changeTextForNewScene() {
         switch(global_PlaqueInfo) {
             #region Roger Bacon (RB)
@@ -64,7 +79,7 @@ public class ModifyInfoButton : MonoBehaviour
                 global_TextForNewScene = "RB322";
             break;
             case "RB321":
-                global_TextForNewScene = "RB321";
+                global_TextForNewScene = "<align=\"center\"><color=#006B54><size=28px>Jack Armitage</size></color></align><br><br><align=\"center\"><color=#006B54><size=26px>About</size></color></align><br>Jack has 30 years of experience in cyber security and IT. Jack is a firm believer that education goes beyond the classroom so he tries to bring his students experiences through projects and guest speakers. In Jack's classes students do a lot of group work so they can learn from each other. He went to UAlbany where there was often 500 students per class. Classes like that were so big, it was hard to get to know the professors on a personal level.<br> \"You don't get that here at Siena. Small class sizes, friendly faculty, great kids, and a feeling of belonging. There are many opportunities to get involved and do service work. You just can't beat it.\"<br><align=\"center\"><color=#006B54><size=26px>Classes I Teach</size></color></align><br>Cyber Security, Management Information Systems, Database<br><align=\"center\"><color=#006B54><size=26px>Hobbies + Interests</size></color></align><br>Jack loves to play golf and hike. His favorite movie is <i>The Shining</i>.";
             break;
             case "RB320":
                 global_TextForNewScene = "RB320";
@@ -210,9 +225,5 @@ public class ModifyInfoButton : MonoBehaviour
         }
     }
 
-    public void disableButton() {
-        global_PlaqueInfo = "Waiting...";
-        newText.text = "Waiting...";
-        moreInfoButton.interactable = false;
-    }
+    
 }
