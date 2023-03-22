@@ -79,7 +79,7 @@ public class ModifyInfoButton : MonoBehaviour
                 global_TextForNewScene = "RB322";
             break;
             case "RB321":
-                global_TextForNewScene = "RB321";
+                global_TextForNewScene = "<align=\"center\"><color=#006B54><size=28px>Professor Armitage</size></color></align><br>Professor Armitage has done a wide range of IT jobs during his 30 years in the industry. Even with all this experience, Professor Armitage still learns from his students everyday. <br><br>\"I went to UAlbany and had 500 students in several freshman classes. Overwhelming. So big it was hard to get to know your professors. You don't get that here at Siena. Small class sizes, friendly faculty, great kids, and a feeling of belonging. There are many opportunities to get involved and do service work. You just can't beat it.\"<br><br><align=\"center\"><color=#006B54><size=26px>Classes I teach</size></color></align><br>Cyber Security, Management Information Systems, Databases<br><br><align=\"center\"><color=#006B54><size=26px>Clubs</size></color></align><br>Professor Armitage is a part of the Cyber Security Club, a very new club to campus. The club discusses current events in cyber, while enjoying pizza and soda at meetings.<br><br><align=\"center\"><color=#006B54><size=26px>Interests + Hobbies</size></color></align><br>Professor Armitage likes to hike and play golf. His favorite movie is <i>The Shining</i>.";
             break;
             case "RB320":
                 global_TextForNewScene = "RB320";
