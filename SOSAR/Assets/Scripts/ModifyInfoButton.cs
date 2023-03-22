@@ -40,7 +40,7 @@ public class ModifyInfoButton : MonoBehaviour
     * For professor names: <align=\"center\"><color=#006B54><size=28px> text </size></color></align><br>
     * For headings: <align=\"center\"><color=#006B54><size=26px> text </size></color></align><br>
     * For content: <color=>
-    *
+    * "<align=\"center\"><color=#006B54><size=28px>Professor </size></color></align><br><br><align=\"center\"><color=#006B54><size=26px>Classes I Teach</size></color></align><br><br>";
     *
     *
     */
@@ -73,7 +73,7 @@ public class ModifyInfoButton : MonoBehaviour
                 global_TextForNewScene = "RB324";
             break;
             case "RB323":
-                global_TextForNewScene = "RB323";
+                global_TextForNewScene = "<align=\"center\"><color=#006B54><size=28px>Professor James Matthews</size></color></align><br>Most every Computer Science student will have to take math classes, and they'll most likely take them with Professor Matthews. His high enthusiasm for mathematics will leave students with many fond memories from his classes.<br><br>Outside of the classroom, Professor Matthews focuses on STEM Education. He is a national leader in Math and Computer Science education and is a monumental part of organizing the yearly High School Programming event, where teams of high school students come to Siena for friendly competition.<br><align=\"center\"><color=#006B54><size=26px>Classes I Teach</size></color></align><br><br>MATH010: Finite Mathematics, MATH250: Discrete Mathematics, MATH350: Theory of Computation, CSIS110: Intro to Computer Science<br><br><align=\"center\"><color=#006B54><size=26px>Hobbies + Interests</size></color></align><br>Professor Matthews likes to run, bike, hike and ski. He also enjoys puzzles and games, magic, reading and hanging out with his friends and families.";
             break;
             case "RB322":
                 global_TextForNewScene = "RB322";
