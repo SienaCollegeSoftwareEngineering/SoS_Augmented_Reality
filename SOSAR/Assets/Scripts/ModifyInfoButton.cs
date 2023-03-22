@@ -37,8 +37,8 @@ public class ModifyInfoButton : MonoBehaviour
 
 
     /*
-    * For professor names: <align=\"center\"><color=#006B54><size=28px> text </size></color></align>
-    * For headings: <align=\"center\"><color=#006B54><size=26px> text </size></color></align>
+    * For professor names: <align=\"center\"><color=#006B54><size=28px> text </size></color></align><br>
+    * For headings: <align=\"center\"><color=#006B54><size=26px> text </size></color></align><br>
     * For content: <color=>
     *
     *
@@ -49,16 +49,16 @@ public class ModifyInfoButton : MonoBehaviour
             #region Roger Bacon (RB)
             // 3rd floor
             case "RB350":
-                global_TextForNewScene = "<color=#1ab2c5><align=\"center\">This is Roger Bacon 350. </color></align><br>It is the open lab where you can come to do homework and study. You might also have a class or exam in here.";
+                global_TextForNewScene = "<color=#1ab2c5><align=\"center\">Roger Bacon 350</color></align><br>It is the open lab where you can come to do homework and study. You might also have a class or exam in here.";
             break;
             case "RB348":
-                global_TextForNewScene = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis turpis nec velit iaculis euismod sit amet quis magna. Nullam venenatis pellentesque nunc, vel ultrices felis auctor egestas. Donec auctor lobortis neque, non tristique justo euismod non. Cras vestibulum, quam sed iaculis tincidunt, sapien quam eleifend diam, eu sodales lacus neque non ex. Suspendisse hendrerit neque nec rutrum finibus. Sed aliquam, elit vitae accumsan condimentum, nunc ante bibendum lacus, ut efficitur sem erat quis nibh. Pellentesque turpis erat, viverra ut ornare nec, interdum quis odio. Maecenas et metus id mauris fringilla eleifend. Mauris lacinia sed risus ut tincidunt. Nullam molestie enim diam, at bibendum erat dapibus eu. In egestas lobortis efficitur. Integer a lacus feugiat, malesuada lacus et, semper metus.";
+                global_TextForNewScene = "<align=\"center\"><color=#006B54><size=28px>Roger Bacon 348</size></color></align><br>This is the Software Engineering Lab. Students taking CSIS-410 (Software Engineering I) and CSIS-415 (Software Engineering II) have labs and develop semester long apps in here. Often, you'll see students hunkered down here, hard at work on their projects.<br><br><align=\"center\"><color=#006B54><size=26px>Fun Facts</size></color></align><br>This app was made in this room!";
             break;
             case "RB340":
                 global_TextForNewScene = "RB340";
             break;
             case "RB338":
-                global_TextForNewScene = "RB338";
+                global_TextForNewScene = "<align=\"center\"><color=#006B54><size=28px>Dr. MaryAnne Egan</size></color></align><br><br><align=\"center\"><color=#006B54><size=26px>About</size></color></align><br>Dr. Egan recognizes and works to act on the issues of underrepresentation in Computer Science. She has worked on grants to increase the number of Computer Science teachers in NY, is involved in the Women in Computer Science Club, and often teaches students how to make their developed applications more accessible for everyone.<br>\"Having been around Siena most of my life (my dad taught here), I see how the professors really care about the students and that the people are amazing. The small teacher to student ratio makes it easy for professors to discover individual students' talents and suggest ways to help them learn and improve. \"<br><align=\"center\"><color=#006B54><size=26px>Classes I Teach</size></color></align><br>CSIS180: Web Design, CSIS110: Introduction to Computer Science, CSIS200: Diversity in Computer Science<br><align=\"center\"><color=#006B54><size=26px>Clubs</size></color></align><br>Women in Computing.  This club is a great way to involve and engage women in the computer science field. We provide valuable networking between Siena students and successful career professionals by encouraging attendance to various computer science conferences.<br><br><align=\"center\"><color=#006B54><size=26px>Hobbies + Interests</size></color></align><br>Dr. Egan likes to travel, so much so she has been to all 7 continents. She also enjoys movies, crafts, cool new tech and her grandkids. Her favorite play is <i>Hamilton</i>";
             break;
             case "RB332":
                 global_TextForNewScene = "RB332";
@@ -67,7 +67,7 @@ public class ModifyInfoButton : MonoBehaviour
                 global_TextForNewScene = "RB328";
             break;
             case "RB326":
-                global_TextForNewScene = "RB326";
+                global_TextForNewScene = "<align=\"center\"><color=#006B54><size=28px>Dr. Ting Liu</size></color></align><br>With research interests in Computational Sociolinguistics, Natural Language Processing, AI and Machine Learning, Dr. Liu is the one to go to to ask about the ever changing world of Computer Science. His current area of research is on general AI, which teaches robots to learn like kids.<br><br>\"I really enjoy teaching in the class and working with my students during the research. We have very dedicated and intelligent students, who clearly know their goals and responsibilities to the society and therefore are willing to put their time and efforts into preparing for their brilliant future. I also very much enjoy working with my colleagues. We not only share the ideas and experiences to improve the teaching/learning quality but also collaborate tightly to work on the very challenging research problems in Computer Science area.\"<br><align=\"center\"><color=#006B54><size=26px>Classes I Teach</size></color></align><br>CSIS120: Software Development, CSIS210: Data Structures, CSIS370: Robotics, CSIS375: Intro to AI";
             break;
             case "RB324":
                 global_TextForNewScene = "RB324";
@@ -79,7 +79,7 @@ public class ModifyInfoButton : MonoBehaviour
                 global_TextForNewScene = "RB322";
             break;
             case "RB321":
-                global_TextForNewScene = "<align=\"center\"><color=#006B54><size=28px>Jack Armitage</size></color></align><br><br><align=\"center\"><color=#006B54><size=26px>About</size></color></align><br>Jack has 30 years of experience in cyber security and IT. Jack is a firm believer that education goes beyond the classroom so he tries to bring his students experiences through projects and guest speakers. In Jack's classes students do a lot of group work so they can learn from each other. He went to UAlbany where there was often 500 students per class. Classes like that were so big, it was hard to get to know the professors on a personal level.<br> \"You don't get that here at Siena. Small class sizes, friendly faculty, great kids, and a feeling of belonging. There are many opportunities to get involved and do service work. You just can't beat it.\"<br><align=\"center\"><color=#006B54><size=26px>Classes I Teach</size></color></align><br>Cyber Security, Management Information Systems, Database<br><align=\"center\"><color=#006B54><size=26px>Clubs</size></color></align><br>Jack is apart of the Cyber Security Club, a very recently formed club on campus. The club discusses topics related to cyber while enjoying pizza and soda at meetings.<br><align=\"center\"><color=#006B54><size=26px>Hobbies + Interests</size></color></align><br>Jack loves to play golf and hike. His favorite movie is <i>The Shining</i>.";
+                global_TextForNewScene = "RB321";
             break;
             case "RB320":
                 global_TextForNewScene = "RB320";
