@@ -9,6 +9,9 @@ using TMPro;
 
 public class Manager : MonoBehaviour
 {
+    // 3/25/2023 - Commenting this script out because 1. I don't know what it does as I did not
+    // write it, 2. It gives an error when running in game, 3. it is unncessary
+    /*
      private TMP_Text m_TextComponent;
 
      //I know this looks bad but I don't know exactly how the data comes in from the new database
@@ -56,4 +59,5 @@ public class Manager : MonoBehaviour
                     }
                 }
             }
+    */
 }

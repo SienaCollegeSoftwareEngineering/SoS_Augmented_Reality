@@ -889,6 +889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 111
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -1383,6 +1384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB323
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -1534,6 +1536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB313
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -1659,6 +1662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 122
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -1981,6 +1985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB324
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -2131,6 +2136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 248
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -2255,6 +2261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 407
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -2379,6 +2386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 126
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -3275,6 +3283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB224A
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -3399,6 +3408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 428
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -3549,6 +3559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB321
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -3952,6 +3963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB240
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -4102,6 +4114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB230
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -4226,6 +4239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 409
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -4350,6 +4364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 432
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -4474,6 +4489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 140
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -4633,6 +4649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB222
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -4788,6 +4805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB326
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -4938,6 +4956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB212
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -5234,6 +5253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 136
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -5785,7 +5805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Scott
+  m_text: Dr. Scott Vandenberg
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -5819,7 +5839,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5848,7 +5868,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -18.376923, y: 0, z: -19.484253, w: 0}
+  m_margin: {x: -28.042603, y: 0, z: -22.142944, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -6002,6 +6022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB308
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -6012,7 +6033,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 510450594}
 --- !u!4 &510450593
 Transform:
@@ -6496,6 +6517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB231
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -6620,6 +6642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 107
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -6744,6 +6767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 404
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -6894,6 +6918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB202
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -7044,6 +7069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB256
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -7340,6 +7366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 422
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -7464,6 +7491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 150
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -7569,7 +7597,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Dr. Breimer '
+  m_text: 'Dr. Eric Breimer '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -7958,6 +7986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB225
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -8453,6 +8482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB315
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -9451,6 +9481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 405
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -9601,6 +9632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB_338
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -9903,6 +9935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 104
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -10225,6 +10258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB316
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -10548,6 +10582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB204
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -11171,7 +11206,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: dr white
+  m_text: Professor Pauline White
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -11205,7 +11240,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -11234,7 +11269,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -26.011047, y: 0, z: -28.590698, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -11388,6 +11423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB221
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -11559,7 +11595,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932484940}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.62}
+  m_LocalPosition: {x: 0, y: 0, z: -0.7}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11591,7 +11627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: danuel
+  m_text: Dr. Dan DiTursi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -11625,7 +11661,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -11654,7 +11690,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -19.011688, y: 0, z: -22.09671, w: 0}
+  m_margin: {x: -23.842468, y: 0, z: -22.09671, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -11808,6 +11844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB_340
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -11932,6 +11969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 121
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -12217,6 +12255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB319
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -13062,6 +13101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB236
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -13186,6 +13226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: Breyo
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -13336,6 +13377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB328
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -13804,6 +13846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 412
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -14370,6 +14413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 401
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -14692,6 +14736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 238
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -15333,6 +15378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 434
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -15739,6 +15785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB350
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -16445,6 +16492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 120
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -16741,6 +16789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 418
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -17063,6 +17112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB314
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -17214,6 +17264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB318
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -17339,6 +17390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 132
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -17587,6 +17639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB_312
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -17711,6 +17764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 416
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -17861,6 +17915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB229
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -18355,6 +18410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB_348
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -18549,6 +18605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB304
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -19017,6 +19074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 403
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -19167,6 +19225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB223
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -19291,6 +19350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 411
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -19441,6 +19501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 210
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -19565,6 +19626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 413
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -20297,6 +20359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 109
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -21203,6 +21266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB302
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -21213,7 +21277,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1621028953}
 --- !u!4 &1621028952
 Transform:
@@ -21327,6 +21391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 414
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -21477,6 +21542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB311
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -22239,7 +22305,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683226222}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 11.9}
+  m_LocalPosition: {x: 0, y: 0, z: -3.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22248,7 +22314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.6, y: -0}
+  m_AnchoredPosition: {x: 0.29, y: -0}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1683226224
@@ -22271,10 +22337,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is text for Roger Bacon 332
+  m_text: Professor Ninad Chaudhari
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -22305,7 +22371,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -22334,7 +22400,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -19.074753, y: 0, z: -20.294754, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -22363,7 +22429,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22488,6 +22554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB317
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -22784,6 +22851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 152
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -22934,6 +23002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB227
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -23084,6 +23153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 332
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -23234,6 +23304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB224
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -23384,6 +23455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB219
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -23508,6 +23580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 426
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -23632,6 +23705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 410
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -23737,7 +23811,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: dr. lim
+  m_text: Dr. Darren Lim (popularly known by the initialism DTL)  is an expert in
+    trivia and teaches a wide array of classes. Students who have him in freshman
+    year may have him senior year as well
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -23771,7 +23847,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -23800,7 +23876,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -13.035278, y: 0, z: -16.909332, w: 0}
+  m_margin: {x: -26.962738, y: 0, z: -29.611053, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -23928,6 +24004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 425
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -24052,6 +24129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 131
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -24472,6 +24550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB235
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -24622,6 +24701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 208
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -24918,6 +24998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 424
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -25042,6 +25123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 113
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -25192,6 +25274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB320
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -25298,7 +25381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dr. F
+  m_text: Dr. Robin Flatland
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -25332,7 +25415,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -25361,7 +25444,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -34.54178, y: 0, z: -42.29538, w: 0}
+  m_margin: {x: -34.54178, y: 0, z: -28.73169, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -25489,6 +25572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 144
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -25766,7 +25850,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: doc small
+  m_text: Dr. Sharon Small
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -25800,7 +25884,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -25906,7 +25990,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922098178}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 1.51}
+  m_LocalPosition: {x: 0, y: 0, z: -0.82}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25915,7 +25999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.34, y: 0}
+  m_AnchoredPosition: {x: 0.09, y: 0}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1922098180
@@ -25938,10 +26022,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is text for Roger Bacon 317
+  m_text: Dr. Ira Goldstein
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25972,7 +26056,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -26001,7 +26085,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -20.620575, y: 0, z: -20.624695, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -26030,7 +26114,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26301,6 +26385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 406
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -26451,6 +26536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB226
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -27399,6 +27485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 430
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -28211,6 +28298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: 142
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques2.xml
@@ -28361,6 +28449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB306
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -28940,6 +29029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB254
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml
@@ -29434,6 +29524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
+  RuntimeCollider: 0
   mTrackableName: RB322330
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Plaques.xml

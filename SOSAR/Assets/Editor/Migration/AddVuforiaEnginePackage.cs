@@ -12,10 +12,11 @@ public class AddVuforiaEnginePackage
 {
     static readonly string sPackagesPath = Path.Combine(Application.dataPath, "..", "Packages");
     static readonly string sManifestJsonPath = Path.Combine(sPackagesPath, "manifest.json");
-    const string VUFORIA_VERSION = "10.3.2";
+    const string VUFORIA_VERSION = "10.14.4";
     const string VUFORIA_TAR_FILE_DIR = "Assets/Editor/Migration/";
     const string DEPENDENCIES_DIR = "Assets/Resources/VuforiaDependencies";
     const string PACKAGES_RELATIVE_PATH = "Packages";
+    const string MRTK_PACKAGE = "com.microsoft.mixedreality.toolkit.foundation";
 
     static readonly ScopedRegistry sVuforiaRegistry = new ScopedRegistry
     {
@@ -34,7 +35,7 @@ public class AddVuforiaEnginePackage
         var packages = GetPackageDescriptions();
             
         if (!packages.All(p => IsVuforiaUpToDate(manifest, p.BundleId)))
-            DisplayAddPackageDialogue(manifest, packages);
+            DisplayAddPackageDialog(manifest, packages);
         
         ResolveDependencies(manifest);
     }
@@ -54,7 +55,7 @@ public class AddVuforiaEnginePackage
     {
         var packages = GetDependencyDescriptions();
         if (packages != null && packages.Count > 0)
-            DisplayDependenciesDialogue(manifest, packages);
+            DisplayDependenciesDialog(manifest, packages);
     }
     
     static bool IsVuforiaUpToDate(Manifest manifest, string bundleId)
@@ -115,7 +116,7 @@ public class AddVuforiaEnginePackage
         return new Version(res.Major, res.Minor, res.Build);
     }
 
-    static void DisplayAddPackageDialogue(Manifest manifest, IEnumerable<PackageDescription> packages)
+    static void DisplayAddPackageDialog(Manifest manifest, IEnumerable<PackageDescription> packages)
     {
         if (EditorUtility.DisplayDialog("Add Vuforia Engine Package",
             $"Would you like to update your project to include the Vuforia Engine {VUFORIA_VERSION} package from the unitypackage?\n" +
@@ -130,7 +131,7 @@ public class AddVuforiaEnginePackage
         }
     }
     
-    static void DisplayDependenciesDialogue(Manifest manifest, IEnumerable<PackageDescription> packages)
+    static void DisplayDependenciesDialog(Manifest manifest, IEnumerable<PackageDescription> packages)
     {
         if (EditorUtility.DisplayDialog("Add Sample Dependencies",
                                         "Would you like to update your project to include all of its dependencies?\n" +
@@ -139,9 +140,22 @@ public class AddVuforiaEnginePackage
         {
             MoveDependencies(manifest, packages);
             CleanupDependenciesFolder();
+            if (ShouldProjectRestart(packages))
+                DisplayRestartDialog();
         }
     }
-    
+
+    static void DisplayRestartDialog()
+    {
+        if (EditorUtility.DisplayDialog("Restart Unity Editor",
+                                        "Due to a Unity lifecycle issue, this project needs to be closed and re-opened " +
+                                        "after importing this Vuforia Engine sample.\n\n",
+                                        "Restart", "Cancel"))
+        {
+            RestartEditor();
+        }
+    }
+
     static List<PackageDescription> GetPackageDescriptions()
     {
         var tarFilePaths = Directory.GetFiles(Path.Combine(Directory.GetCurrentDirectory(), VUFORIA_TAR_FILE_DIR)).Where(f => f.EndsWith(".tgz"));
@@ -186,7 +200,7 @@ public class AddVuforiaEnginePackage
         var tarFilePaths = Directory.GetFiles(dependencyDirectory).Where(f => f.EndsWith(".tgz"));
 
         // Define a regular expression for repeated words.
-        var rx = new Regex(@"(([a-z]+)(\.[a-z]+)*)(\-((\d+)\.(\d+)\.(\d+)))*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        var rx = new Regex(@"(([a-z]+)(\.[a-z]+)+)(\-((\d+)\.(\d+)\.(\d+)))*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         var packageDescriptions = new List<PackageDescription>();
 
@@ -283,6 +297,16 @@ public class AddVuforiaEnginePackage
         Directory.Delete(DEPENDENCIES_DIR);
         File.Delete(DEPENDENCIES_DIR + ".meta");
         AssetDatabase.Refresh();
+    }
+
+    static bool ShouldProjectRestart(IEnumerable<PackageDescription> packages)
+    {
+        return packages.Any(p => p.BundleId == MRTK_PACKAGE);
+    }
+
+    static void RestartEditor()
+    {
+        EditorApplication.OpenProject(Directory.GetCurrentDirectory());
     }
 
     static void SetVuforiaVersion(Manifest manifest, string bundleId, string fileName)
