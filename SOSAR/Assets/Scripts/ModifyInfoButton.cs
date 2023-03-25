@@ -111,8 +111,8 @@ public class ModifyInfoButton : MonoBehaviour
             case "RB311": // White
                 global_TextForNewScene = "<align=\"center\"><color=#006B54><size=28px>Professor Pauline White</size></color></align><br><br><align=\"center\"><color=#006B54><size=26px>About</size></color></align><br>Professor White has taught Computer Science at levels from 7th grade to the undergraduate level. She is an exam reader for the high school AP Computer Science A Exam. She is an advocate for supporting Computer Science teachers in NYS.<br><br><align=\"center\"><color=#006B54><size=26px>Classes I teach</size></color></align><br>CSIS120: Introduction to Software Development, CSIS210: Data Structures, CSIS220: Assembly Language and Computer Architecture";
             break;
-            case "RB308":
-                global_TextForNewScene = "RB308";
+            case "RB308": // Teresco
+                global_TextForNewScene = "<align=\"center\"><color=#006B54><size=28px>Dr. James Teresco</size></color></align><br><br><align=\"center\"><color=#006B54><size=26px>About</size></color></align><br>Dr. Teresco discovered programming with the Atari 2600 and Commodore 64. A big moment in his career came when he had the idea to use highway data and maps to improve a Data Structures lab. This evolved into his Map-Based Educational Tools to Algorithm Learning (METAL) project. This project helps students learn about algorithms with real highway data in an interactive way. This program is used in some CS classes and numerous students have contributed to its ongoing development.<br><br><align=\"center\"><color=#006B54><size=26px>Classes I teach</size></color></align><br> CSIS335: Parallel Processing, CSIS330: Operating Systems, CSIS210: Data Structures, CSIS225: Advanced Programming, CSIS285: Analysis of Algorithms, CSIS301: Programming C in Unix, CSIS011: Problem Solving with Spreadsheets<br><br><align=\"center\"><color=#006B54><size=26px>Interests + Hobbies</size></color></align><br>Dr. Teresco likes baseball, traveling, and skiing.";
             break;
             case "RB306":
                 global_TextForNewScene = "RB306";

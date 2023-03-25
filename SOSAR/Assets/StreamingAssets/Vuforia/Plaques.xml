@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="RB326" size="1.000000 0.997086" />
     <ImageTarget name="RB212" size="1.000000 0.994255" />
     <ImageTarget name="RB223" size="1.000000 0.977409" />
     <ImageTarget name="RB221" size="1.000000 0.991432" />
@@ -26,7 +27,6 @@
     <ImageTarget name="RB319" size="1.000000 0.985980" />
     <ImageTarget name="RB328" size="1.000000 0.995411" />
     <ImageTarget name="RB315" size="1.000000 0.992890" />
-    <ImageTarget name="RB326" size="1.000000 0.997940" />
     <ImageTarget name="RB311" size="1.000000 0.990822" />
     <ImageTarget name="RB316" size="1.000000 0.993289" />
     <ImageTarget name="RB314" size="1.000000 1.002370" />
