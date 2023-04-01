@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>60ca4e33b23167645938badea38d5f4b</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2023-03-26T11:51:35.6856234-04:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>160cf818b948647498bc026146937d40</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2023-03-26T11:51:35.6866196-04:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7557bd3e8019a3c41ba4cf8369d5ed20</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2023-03-26T11:51:35.6866196-04:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ec1552b8ab7762b4c9a5a5db91f6d439</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/CollectionData.cs</fileName>
+    <timeStamp>2023-03-26T11:51:35.6876173-04:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a3ec2c89ce6f3c44984b677567722b7b</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2023-03-26T11:51:35.6876173-04:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>10a2b2ca58d524649b9a706d8a852138</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2023-03-26T11:51:35.6886142-04:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fe10a68f6733443efb93f29c0b67a18b</guid>
+    <fileName>Assets/Scripts/AccessDatabase.cs</fileName>
+    <timeStamp>2023-02-13T15:13:58.3672847-05:00</timeStamp>
+    <typeFullName>
+      <string>AccessDatabase</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f36c71122cb03416fbda407abfc8c179</guid>
+    <fileName>Assets/Scripts/ChangeScene.cs</fileName>
+    <timeStamp>2023-02-13T15:13:58.3672847-05:00</timeStamp>
+    <typeFullName>
+      <string>ChangeScene</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c47a73c584589f2418314798bb04d4e1</guid>
+    <fileName>Assets/Scripts/ImmediatelyChangeText.cs</fileName>
+    <timeStamp>2023-03-21T11:18:59.841597-04:00</timeStamp>
+    <typeFullName>
+      <string>ImmediatelyChangeText</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c70e2403d3a512047a2d663c4dea8060</guid>
+    <fileName>Assets/Scripts/Manager.cs</fileName>
+    <timeStamp>2023-03-25T12:26:14.390936-04:00</timeStamp>
+    <typeFullName>
+      <string>Manager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bb3206cbaec7c4c4b86f17ed13189fef</guid>
+    <fileName>Assets/Scripts/ModifyInfoButton.cs</fileName>
+    <timeStamp>2023-03-25T15:02:54.8272864-04:00</timeStamp>
+    <typeFullName>
+      <string>ModifyInfoButton</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3ca6ef676cd714e4aa93e817a02bd815</guid>
+    <fileName>Assets/Scripts/SceneChanger.cs</fileName>
+    <timeStamp>2023-02-13T15:13:58.3672847-05:00</timeStamp>
+    <typeFullName>
+      <string>SceneChanger</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>030314e3729972743a5519bde0dc845c</guid>
+    <fileName>Assets/Scripts/SetText.cs</fileName>
+    <timeStamp>2023-02-13T15:13:58.3672847-05:00</timeStamp>
+    <typeFullName>
+      <string>SetText</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1754dcbe953831d41afbd2d57a3616ad</guid>
+    <fileName>Assets/Scripts/Wait.cs</fileName>
+    <timeStamp>2023-02-13T15:13:58.3672847-05:00</timeStamp>
+    <typeFullName>
+      <string>Wait</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3bbef22eb814a9647b6c1f03e99d95da</guid>
+    <fileName>Assets/Editor/Migration/AddVuforiaEnginePackage.cs</fileName>
+    <timeStamp>2023-03-16T12:11:19-04:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>788587e994f1943f3856c1c332db429b</guid>
+    <fileName>Assets/ExampleAssets/Scripts/AnchorCreator.cs</fileName>
+    <timeStamp>2023-02-13T15:13:58.2438977-05:00</timeStamp>
+    <typeFullName>
+      <string>AnchorCreator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>de9919161fbca46b79a86ecacee38c30</guid>
+    <fileName>Assets/ExampleAssets/Scripts/ARFeatheredPlaneMeshVisualizer.cs</fileName>
+    <timeStamp>2023-02-13T15:13:58.2438977-05:00</timeStamp>
+    <typeFullName>
+      <string>ARFeatheredPlaneMeshVisualizer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+</ArrayOfTypeDate>
