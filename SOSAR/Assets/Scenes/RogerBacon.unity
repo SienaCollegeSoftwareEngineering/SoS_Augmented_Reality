@@ -1590,6 +1590,104 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 104002099}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &107539962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 107539963}
+  - component: {fileID: 107539966}
+  - component: {fileID: 107539965}
+  - component: {fileID: 107539964}
+  m_Layer: 0
+  m_Name: RB_204_Picture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &107539963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107539962}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.041, y: 0, z: 1.345}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 814020335}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!64 &107539964
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107539962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &107539965
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107539962}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b1535acbab1f98149b7203dac0d7eb78, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &107539966
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107539962}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &128579096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,7 +2250,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 182647641}
 --- !u!4 &182647640
 Transform:
@@ -3304,7 +3402,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 293288505}
 --- !u!4 &293288504
 Transform:
@@ -3984,7 +4082,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 326553131}
 --- !u!4 &326553130
 Transform:
@@ -4135,7 +4233,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 345441446}
 --- !u!4 &345441445
 Transform:
@@ -4670,7 +4768,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 423007092}
 --- !u!224 &423007091
 RectTransform:
@@ -4977,7 +5075,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 440012399}
 --- !u!4 &440012398
 Transform:
@@ -6539,7 +6637,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 533536993}
 --- !u!4 &533536992
 Transform:
@@ -6940,7 +7038,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 561011419}
 --- !u!4 &561011418
 Transform:
@@ -7091,7 +7189,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 570159812}
 --- !u!4 &570159811
 Transform:
@@ -10718,7 +10816,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 814020336}
 --- !u!4 &814020335
 Transform:
@@ -10728,11 +10826,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814020329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33, y: 0, z: -200.6}
+  m_LocalPosition: {x: -33, y: 0, z: -200.474}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2098252452}
+  - {fileID: 107539963}
   m_Father: {fileID: 0}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11559,7 +11658,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 890366634}
 --- !u!4 &890366633
 Transform:
@@ -13237,7 +13336,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1068581569}
 --- !u!4 &1068581568
 Transform:
@@ -14872,7 +14971,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1187553414}
 --- !u!4 &1187553413
 Transform:
@@ -18056,7 +18155,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1362861243}
 --- !u!4 &1362861242
 Transform:
@@ -19366,7 +19465,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1478792979}
 --- !u!4 &1478792978
 Transform:
@@ -19642,7 +19741,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1497733172}
 --- !u!4 &1497733171
 Transform:
@@ -23451,7 +23550,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1739829248}
 --- !u!4 &1739829247
 Transform:
@@ -23602,7 +23701,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1740307262}
 --- !u!4 &1740307261
 Transform:
@@ -24697,7 +24796,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1767961232}
 --- !u!4 &1767961231
 Transform:
@@ -24848,7 +24947,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1768644117}
 --- !u!4 &1768644116
 Transform:
@@ -26781,7 +26880,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1954769863}
 --- !u!4 &1954769862
 Transform:
@@ -29274,7 +29373,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 2084484460}
 --- !u!4 &2084484459
 Transform:
@@ -29337,7 +29436,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098252451}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 1.75}
+  m_LocalPosition: {x: 0, y: 0, z: -0.752}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29346,7 +29445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.27, y: 0}
+  m_AnchoredPosition: {x: 0.084, y: 0}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2098252453
@@ -29369,10 +29468,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is text for Roger Bacon 204
+  m_text: Dr. John Cummings
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29403,7 +29502,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -29432,7 +29531,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -7.752571, y: 0, z: -6.610718, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -29461,7 +29560,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

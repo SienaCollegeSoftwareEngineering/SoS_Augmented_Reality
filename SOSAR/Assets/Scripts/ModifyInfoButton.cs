@@ -191,7 +191,7 @@ public class ModifyInfoButton : MonoBehaviour
                 global_TextForNewScene = "RB208";
             break;
             case "RB204":
-                global_TextForNewScene = "RB204";
+                global_TextForNewScene = "<align=\"center\"><color=#006B54><size=28px>Dr. John Cummings</size></color></align><br><br>Dr. Cummings areas as a Dean include School of Science Office, Department of Biology, Department of Chemistry and Biochemistry, Department of Computer Science, and more!<br><br>\"Nothing is the matter with people, they have just been trained that rote memorization of facts and recipes is the easiest way to perform well in an academic setting. As an instructor my goal is to set up a classroom environment that encourages and rewards true understanding, while discouraging rote memorization. I want to harden fragile knowledge and make it robust.\"";
             break;
             case "RB202":
                 global_TextForNewScene = "RB202";
