@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is text for Roger Bacon 432
+  m_text: This is the Math library.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2365,17 +2365,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 407
+  mTrackableName: RB407
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.44375
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.979822
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.21875
+  mWidth: 1
+  mHeight: 0.979822
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 206724862}
 --- !u!4 &206724861
 Transform:
@@ -2407,8 +2407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 206724860}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 407
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB407
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 206724860}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -3517,17 +3517,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 428
+  mTrackableName: RB428
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.4364584
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.992788
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.182292
+  mWidth: 1
+  mHeight: 0.992788
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 294877217}
 --- !u!4 &294877216
 Transform:
@@ -3559,8 +3559,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 294877215}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 428
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB428
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 294877215}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -4348,17 +4348,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 409
+  mTrackableName: RB409
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.4947916
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.75
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.473958
+  mWidth: 1
+  mHeight: 0.75
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 346266574}
 --- !u!4 &346266573
 Transform:
@@ -4390,8 +4390,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 346266572}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 409
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB409
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 346266572}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -4473,17 +4473,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 432
+  mTrackableName: RB432
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.404735
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.988391
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.023675
+  mWidth: 1
+  mHeight: 0.988391
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 386698279}
 --- !u!4 &386698278
 Transform:
@@ -4515,8 +4515,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 386698277}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 432
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB432
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 386698277}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -6877,17 +6877,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 404
+  mTrackableName: RB404
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.49270838
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.987699
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.463542
+  mWidth: 1
+  mHeight: 0.987699
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 550920013}
 --- !u!4 &550920012
 Transform:
@@ -6919,8 +6919,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 550920011}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 404
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB404
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 550920011}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -7481,17 +7481,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 422
+  mTrackableName: RB422
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.4416666
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.998655
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.208333
+  mWidth: 1
+  mHeight: 0.998655
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 587563476}
 --- !u!4 &587563475
 Transform:
@@ -7523,8 +7523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 587563474}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 422
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB422
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 587563474}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -9705,17 +9705,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 405
+  mTrackableName: RB405
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.4697916
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.971318
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.348958
+  mWidth: 1
+  mHeight: 0.971318
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 724603957}
 --- !u!4 &724603956
 Transform:
@@ -9747,8 +9747,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 724603955}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 405
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB405
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 724603955}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -13461,7 +13461,7 @@ MonoBehaviour:
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1073329485}
 --- !u!4 &1073329484
 Transform:
@@ -14071,17 +14071,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 412
+  mTrackableName: RB412
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.48125
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.971797
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.40625
+  mWidth: 1
+  mHeight: 0.971797
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1101808021}
 --- !u!4 &1101808020
 Transform:
@@ -14113,8 +14113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1101808019}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 412
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB412
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1101808019}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -14638,13 +14638,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 401
+  mTrackableName: RB401
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.5739584
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.75
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.869792
+  mWidth: 1
+  mHeight: 0.75
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -14680,8 +14680,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1161981457}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 401
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB401
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1161981457}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -15608,17 +15608,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 434
+  mTrackableName: RB434
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.53125
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 1.006234
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.65625
+  mWidth: 1
+  mHeight: 1.006234
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1221896638}
 --- !u!4 &1221896637
 Transform:
@@ -15650,8 +15650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1221896636}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 434
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB434
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1221896636}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -17019,17 +17019,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 418
+  mTrackableName: RB418
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.49166662
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.998053
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.458333
+  mWidth: 1
+  mHeight: 0.998053
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1296593611}
 --- !u!4 &1296593610
 Transform:
@@ -17061,8 +17061,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1296593609}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 418
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB418
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1296593609}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -17994,17 +17994,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 416
+  mTrackableName: RB416
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.5449172
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.9973
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.724586
+  mWidth: 1
+  mHeight: 0.9973
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1359015212}
 --- !u!4 &1359015211
 Transform:
@@ -18036,8 +18036,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1359015210}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 416
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB416
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1359015210}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -19304,17 +19304,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 403
+  mTrackableName: RB403
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.46145838
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.978032
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.307292
+  mWidth: 1
+  mHeight: 0.978032
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1478670517}
 --- !u!4 &1478670516
 Transform:
@@ -19346,8 +19346,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1478670515}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 403
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB403
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1478670515}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -19580,17 +19580,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 411
+  mTrackableName: RB411
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.4072916
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.980888
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.036458
+  mWidth: 1
+  mHeight: 0.980888
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1482903920}
 --- !u!4 &1482903919
 Transform:
@@ -19622,8 +19622,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1482903918}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 411
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB411
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1482903918}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -19856,17 +19856,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 413
+  mTrackableName: RB413
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.471875
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.988745
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.359375
+  mWidth: 1
+  mHeight: 0.988745
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1502262152}
 --- !u!4 &1502262151
 Transform:
@@ -19898,8 +19898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1502262150}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 413
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB413
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1502262150}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -21621,17 +21621,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 414
+  mTrackableName: RB414
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.5291666
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 1.010363
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.645833
+  mWidth: 1
+  mHeight: 1.010363
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1625178351}
 --- !u!4 &1625178350
 Transform:
@@ -21663,8 +21663,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1625178349}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 414
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB414
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1625178349}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -23816,17 +23816,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 426
+  mTrackableName: RB426
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.5166666
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 1.019307
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.583333
+  mWidth: 1
+  mHeight: 1.019307
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1742745017}
 --- !u!4 &1742745016
 Transform:
@@ -23858,8 +23858,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1742745015}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 426
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB426
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1742745015}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -23941,17 +23941,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 410
+  mTrackableName: RB410
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.5177084
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.997484
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.588542
+  mWidth: 1
+  mHeight: 0.997484
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1744450930}
 --- !u!4 &1744450929
 Transform:
@@ -23983,8 +23983,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1744450928}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 410
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB410
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1744450928}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -24240,17 +24240,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 425
+  mTrackableName: RB425
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.47811818
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 1.010363
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.390591
+  mWidth: 1
+  mHeight: 1.010363
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1756037134}
 --- !u!4 &1756037133
 Transform:
@@ -24282,8 +24282,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1756037132}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 425
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB425
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1756037132}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -25234,17 +25234,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 424
+  mTrackableName: RB424
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.4489584
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 1.028412
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.244792
+  mWidth: 1
+  mHeight: 1.028412
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1800777876}
 --- !u!4 &1800777875
 Transform:
@@ -25276,8 +25276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1800777874}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 424
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB424
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1800777874}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -26719,17 +26719,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 406
+  mTrackableName: RB406
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.4322916
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.991635
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.161458
+  mWidth: 1
+  mHeight: 0.991635
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1952852522}
 --- !u!4 &1952852521
 Transform:
@@ -26761,8 +26761,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1952852520}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 406
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB406
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 1952852520}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -27819,17 +27819,17 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 430
+  mTrackableName: RB430
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Plaques2.xml
-  mAspectRatio: 0.528125
+  mDataSetPath: Vuforia/plaques.xml
+  mAspectRatio: 0.993837
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 2.640625
+  mWidth: 1
+  mHeight: 0.993837
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 1
+  mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 2009682085}
 --- !u!4 &2009682084
 Transform:
@@ -27861,8 +27861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2009682083}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 430
-  mDatasetName: Vuforia/Plaques2.xml
+  mTargetName: RB430
+  mDatasetName: Vuforia/plaques.xml
   mCastedBehaviour: {fileID: 2009682083}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
