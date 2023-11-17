@@ -17,9 +17,13 @@ public class ScavengerHunt : MonoBehaviour
 
     public static string global_PlaqueInfo;
 
-    public List<string> plaqueNums = new List<string> { "RB316", "RB319" };
 
-    public List<string> plaqueHints = new List<string> { "Lim", "Cotler" };
+    
+
+    public List<string> plaqueNums = new List<string> { "RB308", "RB311", "RB313", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323"};
+
+    public List<string> plaqueHints = new List<string> { "Teresco", "Small", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
+
     public int current_Plaque = 0;
 
 
