@@ -10,6 +10,7 @@ public class ScavengerHunt : MonoBehaviour
 {
     public Button btn;
 
+    public Image pnl;
     public Image img;
     public Button XButton;
     public TMP_Text clueText;
@@ -58,6 +59,9 @@ public void displayCurrentHint(){
 
     img = GameObject.Find("XButton").GetComponent<Image>();
     img.enabled = true;
+
+    pnl = GameObject.Find("ClueBackground").GetComponent<Image>();
+    pnl.enabled = true;
 }
 
 public void hideCurrentHint(){
@@ -69,6 +73,9 @@ public void hideCurrentHint(){
 
     img = GameObject.Find("XButton").GetComponent<Image>();
     img.enabled = false;
+
+    pnl = GameObject.Find("ClueBackground").GetComponent<Image>();
+    pnl.enabled = false;
 }
 
 
