@@ -65,3 +65,4 @@ crashlytics-build.properties
 *.tgz
 
 *.vsconfig
+node_modules
