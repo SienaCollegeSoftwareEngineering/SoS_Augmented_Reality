@@ -12,46 +12,140 @@ public class ScavengerHunt : MonoBehaviour
 
     public Image pnl;
     public Image img;
+
+    public Image XButtonClueImg;
+
+    public Button XButtonClue;
+
+    public Image cluePanel;
+
+    public TMP_Text nextClue;
     public Button XButton;
     public TMP_Text clueText;
 
+    public TMP_Text coinCounter;
+
     public static string global_PlaqueInfo;
 
+    public int coinCount = 0;
 
+    public bool usedHint = false;
+
+    public bool gameStarted = false;
     
 
-    public List<string> plaqueNums = new List<string> { "RB308", "RB311", "RB313", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323"};
+    //public List<string> plaqueNums = new List<string> { "RB308", "RB311", "RB313", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323"};
 
-    public List<string> plaqueHints = new List<string> { "Teresco", "Small", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
+    //public List<string> plaqueHints = new List<string> { "Teresco", "Small", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
+
+    public static string[] plaqueNums = {"RB308", "RB311", "RB313", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323"};
+
+    public static string[] plaqueClues = {"Teresco", "White", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
+
+    public static string[] plaqueHints = {"Teresco", "White", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
+
 
     public int current_Plaque = 0;
 
 
+    void Awake(){
+        current_Plaque = 0;
+        coinCount = 0;
+        
+    }
 
+    public void SelfTour(){
+        pnl = GameObject.Find("RBButtons").GetComponent<Image>();
+        pnl.enabled = false;
+        clueText = GameObject.Find("SelfTourButtonText").GetComponent<TMPro.TextMeshProUGUI>();
+        //clueText.enabled = false;
+        btn = GameObject.Find("SelfTourButton").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("SelfTourButton").GetComponent<Image>();
+        img.enabled = false;
+        clueText = GameObject.Find("SelfTourButtonText").GetComponent<TMPro.TextMeshProUGUI>();
+        //clueText.enabled = false;
+        btn = GameObject.Find("ScavengerHuntButton").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("ScavengerHuntButton").GetComponent<Image>();
+        img.enabled = false;
+        
+        clueText = GameObject.Find("SienaText").GetComponent<TMP_Text>();
+        clueText.enabled = false;
+    }
+    public void DeactivateGame(){
+        gameStarted = false;
+    }
+    public void ActivateGame(){
+            pnl = GameObject.Find("RBButtons").GetComponent<Image>();
+        pnl.enabled = false;
+        //clueText = GameObject.Find("SelfTourButtonText").GetComponent<TMP_Text>();
+        //clueText.enabled = false;
+        btn = GameObject.Find("SelfTourButton").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("SelfTourButton").GetComponent<Image>();
+        img.enabled = false;
+        clueText = GameObject.Find("ScavengerHuntButtonText").GetComponent<TMP_Text>();
+        clueText.enabled = false;
+        btn = GameObject.Find("ScavengerHuntButton").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("ScavengerHuntButton").GetComponent<Image>();
+        img.enabled = false;
+        
+        clueText = GameObject.Find("SienaText").GetComponent<TMP_Text>();
+        clueText.enabled = false;
+            Debug.Log("Game Activated");
+            clueText = GameObject.Find("CoinCounter").GetComponent<TMP_Text>();
+            clueText.enabled = true;
+            img = GameObject.Find("Coin").GetComponent<Image>();
+            img.enabled = true;
+            pnl = GameObject.Find("CoinBackground").GetComponent<Image>();
+            pnl.enabled = true; 
+            btn = GameObject.Find("ClueButton").GetComponent<Button>();
+            btn.enabled = true;
+            clueText = GameObject.Find("ClueButtonText").GetComponent<TMP_Text>();
+            clueText.enabled = true;
+            img = GameObject.Find("ClueButton").GetComponent<Image>();
+            img.enabled = true;
+
+        gameStarted = true;
+    }
     public void GetCurrentPlaque(string plaqueInfo)
     {
-        global_PlaqueInfo = plaqueInfo;
-        Debug.Log(global_PlaqueInfo);
-        checkPlaque();
+        if(gameStarted == true){
+            global_PlaqueInfo = plaqueInfo;
+            Debug.Log(global_PlaqueInfo);
+            checkPlaque();
+        }
 
     }
 
     public void checkPlaque()
     {
-        if (plaqueHints.Count != 0)
+        if (current_Plaque != 14)
         {
             if (string.Equals(global_PlaqueInfo, plaqueNums[current_Plaque]))
             {
                 Debug.Log("Correct Plaque");
-                plaqueNums.RemoveAt(current_Plaque);
-                plaqueHints.RemoveAt(current_Plaque);
-                if (plaqueHints.Count == 0)
+                //plaqueNums.RemoveAt(current_Plaque);
+                //plaqueHints.RemoveAt(current_Plaque);
+                if (current_Plaque == 14)
                 {
                     Debug.Log("Won Game");
                 }
                 else
                 {
+                    if(usedHint == false)
+                    {
+                        coinCount++;
+                        incrementCoin(); 
+                    }
+                    else{
+                        usedHint = false;
+                    }
+                    
                     newPlaque();
+                    displayClue();
                 }
             }
             else
@@ -63,15 +157,22 @@ public class ScavengerHunt : MonoBehaviour
 
     public void newPlaque()
     {
-        current_Plaque = Random.Range(-1, plaqueNums.Count);
+        //current_Plaque = Random.Range(0, plaqueNums.Count-1);
+
+        current_Plaque++;
+        
         Debug.Log(current_Plaque);
     }
 
     public void displayCurrentHint()
     {
-        string hint;
-        hint = plaqueNums[current_Plaque];
-        Debug.Log(hint);
+        for(int i = 0; i < plaqueNums.Length; i++)
+        {
+            Debug.Log(plaqueNums[i]);
+        }
+
+        Debug.Log(plaqueHints.Length);
+
         clueText = GameObject.Find("ClueText").GetComponent<TMP_Text>();
         clueText.enabled = true;
         clueText.text = plaqueHints[current_Plaque];
@@ -102,4 +203,44 @@ public class ScavengerHunt : MonoBehaviour
     }
 
 
+    public void incrementCoin()
+    {
+        
+        coinCounter = GameObject.Find("CoinCounter").GetComponent<TMP_Text>();
+    
+        string coinCountText = coinCount.ToString();
+        coinCounter.text = coinCountText;
+        Debug.Log(coinCount);
+    }
+
+    public void displayClue()
+    {
+        nextClue = GameObject.Find("NextClue").GetComponent<TMP_Text>();
+        nextClue.text = plaqueClues[current_Plaque];
+        nextClue.enabled = true;
+
+        cluePanel = GameObject.Find("NextClueBackground").GetComponent<Image>();
+        cluePanel.enabled = true;
+
+        XButtonClue = GameObject.Find("XButtonClue").GetComponent<Button>();
+        XButtonClue.enabled = true;
+
+        XButtonClueImg = GameObject.Find("XButtonClue").GetComponent<Image>();
+        XButtonClueImg.enabled = true;
+    }
+
+    public void hideClue(){
+        nextClue = GameObject.Find("NextClue").GetComponent<TMP_Text>();
+        nextClue.enabled = false;
+
+        cluePanel = GameObject.Find("NextClueBackground").GetComponent<Image>();
+        cluePanel.enabled = false;
+
+        XButtonClue = GameObject.Find("XButtonClue").GetComponent<Button>();
+        XButtonClue.enabled = false;
+
+        XButtonClueImg = GameObject.Find("XButtonClue").GetComponent<Image>();
+        XButtonClueImg.enabled = false;
+    }
+    
 }
