@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>Form</title>
+        <!--import bootstrap from node modules-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!--import jquery from node modules-->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+        <!--Import oswald font family-->
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+        <!--import custom css-->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="Assets/bernieLogo.webp" alt="Bernie Logo" id="logo">
+                </div>
+            </div>
+        </div>
+        <form>
+            <legend id="form-header" aria-label="Header">School of Science - Change of Information Form</legend>
+            <p id="form-instructions" aria-label="Instructions">Please fill out the fields below that have changed and click the submit button on the bottom when you are done.</p>
+            <div class="mb-3">
+                <label for="wf_email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="wf_email" aria-describedby="emailHelp" placeholder="Enter email">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="wf_name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="wf_name" placeholder="Enter name">
+            </div>
+            <div class="mb-3">
+                <label for="wf_office_phone" class="form-label">Office Phone Number</label>
+                <input type="text" class="form-control" id="wf_office_phone" placeholder="Enter office phone number">
+            </div>
+            <div class="mb-3">
+                <label for="wf_office_location" class="form-label">Office Number</label>
+                <input type="text" class="form-control" id="wf_office_location" placeholder="Enter office number">
+            </div>
+            <div class="mb-3">
+                <label for="wf_classes" class="form-label">Classes taught</label>
+                <input type="text" class="form-control" id="wf_classes" placeholder="Enter the classes you teach">
+            </div>
+            <div class="mb-3">
+                <label for="wf_hobbies" class="form-label">Hobbies</label>
+                <input type="text" class="form-control" id="wf_hobbies" placeholder="Enter your hobbies">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="wf_attestation" required>
+                <label class="form-check-label" for="wf_attestation">I attest that the information I have provided is accurate to the best of my knowledge</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </form>
+        <!--import custom javascript-->
+        <script src="scripts.js" ></script>
+    </body>
+</html>
