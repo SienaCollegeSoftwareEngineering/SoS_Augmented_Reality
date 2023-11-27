@@ -38,11 +38,14 @@ public class ScavengerHunt : MonoBehaviour
 
     //public List<string> plaqueHints = new List<string> { "Teresco", "Small", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
 
-    public static string[] plaqueNums = {"RB308", "RB311", "RB313", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323"};
+    public static string[] plaqueNums = {"RB323","RB313", "RB321", "RB308", "RB311", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", };
 
-    public static string[] plaqueClues = {"Teresco", "White", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
+    public static string[] plaqueClues = {"This professor teaches Discrete Structures and their office is located near Room 350", 
+    "This professor’s favorite class to teach is Database Management Systems and their office is located near Room 328",
+    "This professor is the advisor of the Cyber Security club and their office is located near Room 350", 
+    "Teresco", "White", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer"};
 
-    public static string[] plaqueHints = {"Teresco", "White", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
+    public static string[] plaqueHints = {"Matthews", "Vandenberg", "Armitage", "Teresco", "White", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer"};
 
 
     public int current_Plaque = 0;
