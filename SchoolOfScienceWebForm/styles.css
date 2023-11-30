@@ -1,3 +1,8 @@
+::selection {
+    background-color: #1B4932;
+    color: white;
+}
+
 form {
     background-color: white;
     /*use ozwald regular font*/
@@ -34,4 +39,23 @@ body {
     width: 20%;
     height: 20%;
     margin: 0 auto;
+}
+
+#submit {
+    background-color: #1B4932;
+    border-color: #1B4932;
+}
+
+#submit:hover {
+    background-color: #1B6000;
+    border-color: #1B6000;
+ }
+
+#wf_attestation:checked {
+    background-color: #1B4932;
+    border-color: #1B4932;
+}
+
+#wf_attestation:active {
+    box-shadow: #1B6000;
 }

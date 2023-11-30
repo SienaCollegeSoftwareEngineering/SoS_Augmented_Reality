@@ -66,3 +66,6 @@ crashlytics-build.properties
 
 *.vsconfig
 node_modules
+
+#.vscode folder
+.vscode
