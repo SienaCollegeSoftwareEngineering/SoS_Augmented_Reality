@@ -31,22 +31,46 @@ public class ScavengerHunt : MonoBehaviour
 
     public bool usedHint = false;
 
-    public bool gameStarted = false;
+    public bool gameStarted = true;
     
 
     //public List<string> plaqueNums = new List<string> { "RB308", "RB311", "RB313", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323"};
 
     //public List<string> plaqueHints = new List<string> { "Teresco", "Small", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
 
-    public static string[] plaqueNums = {"RB323","RB313", "RB321", "RB308", "RB311", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", };
-
-    public static string[] plaqueClues = {"This professor teaches Discrete Structures and their office is located near Room 350", 
-    "This professor’s favorite class to teach is Database Management Systems and their office is located near Room 328",
-    "This professor is the advisor of the Cyber Security club and their office is located near Room 350", 
-    "Teresco", "White", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer"};
-
-    public static string[] plaqueHints = {"Matthews", "Vandenberg", "Armitage", "Teresco", "White", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer"};
-
+    public static string[] plaqueNums = {"RB323","RB313", "RB321", "RB308", "RB311", "RB332", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320","RB338","RB326" };
+    public static string[] plaqueClues = {
+        "This professor teaches Discrete Structures and their office is located near Room 350", 
+        "This professor’s favorite class to teach is Database Management Systems and their office is located near Room 328",
+        "This professor is the advisor of the Cyber Security club and their office is located near Room 350", 
+        "This professor is the head chair of the computer science department", 
+        "This is the only professor to teach CSIS 220 and their by the CS lounge", 
+        "This professor is near 340 and teaches Intro to Computer Science and Software Engineering", 
+        "This professor teaches Algorithms and Intro to Computer Science, and their office is located across from Room 328", 
+        "This is the only professor who teaches a first year seminar course", 
+        "This is the only professor to teach Networking and Unix/Linux",
+        "This professor’s research and teaching areas are Artificial Intelligence and Computational Linguistics", 
+        "This professor teaches UX Design and Software Engineering", 
+        "This professor teaches intro to data science",
+        "This professor is the only one to teach Web Design",
+        "This professor does research about Natural language processing"
+    };
+    public static string[] plaqueHints = {
+        "He is not Jack Armitage", 
+        "Their plaque says they attended University of Wisconsin-Madison for their PHD", 
+        "He is known as the dopey IT guy", 
+        "Their plaque says the love to ski", 
+        "She has a M.A.T. from Union Graduate College", 
+        "He was a professional athlete on the Indian National Rifle Shooting Team", 
+        "She loves cooking and distance swimming", 
+        "They love to participate in trivia", 
+        "One of his photos was chosen for Wikipedia picture of the day", 
+        "This professor is located in the CS Lounge", 
+        "This professor is across from the Software Engineering Lab", 
+        "They love to kayak and row",
+        "She has been to all 7 continents", 
+        "He got his masters and bachelors degree from Shandong University"
+    };
 
     public int current_Plaque = 0;
 
@@ -80,7 +104,7 @@ public class ScavengerHunt : MonoBehaviour
         gameStarted = false;
     }
     public void ActivateGame(){
-            pnl = GameObject.Find("RBButtons").GetComponent<Image>();
+        pnl = GameObject.Find("RBButtons").GetComponent<Image>();
         pnl.enabled = false;
         //clueText = GameObject.Find("SelfTourButtonText").GetComponent<TMP_Text>();
         //clueText.enabled = false;
@@ -115,16 +139,17 @@ public class ScavengerHunt : MonoBehaviour
     }
     public void GetCurrentPlaque(string plaqueInfo)
     {
-        if(gameStarted == true){
+        //if(gameStarted){
             global_PlaqueInfo = plaqueInfo;
-            Debug.Log(global_PlaqueInfo);
+            Debug.Log("Check for me: " + global_PlaqueInfo);
             checkPlaque();
-        }
+        //}
 
     }
 
     public void checkPlaque()
     {
+        Debug.Log("Check for me2: " + global_PlaqueInfo);
         if (current_Plaque != 14)
         {
             if (string.Equals(global_PlaqueInfo, plaqueNums[current_Plaque]))
@@ -169,12 +194,7 @@ public class ScavengerHunt : MonoBehaviour
 
     public void displayCurrentHint()
     {
-        for(int i = 0; i < plaqueNums.Length; i++)
-        {
-            Debug.Log(plaqueNums[i]);
-        }
-
-        Debug.Log(plaqueHints.Length);
+        
 
         clueText = GameObject.Find("ClueText").GetComponent<TMP_Text>();
         clueText.enabled = true;
@@ -188,6 +208,23 @@ public class ScavengerHunt : MonoBehaviour
 
         pnl = GameObject.Find("ClueBackground").GetComponent<Image>();
         pnl.enabled = true;
+        usedHint = true;
+    }
+
+    public void displayCurrentClue()
+    {
+        nextClue = GameObject.Find("NextClue").GetComponent<TMP_Text>();
+        nextClue.text = plaqueClues[current_Plaque];
+        nextClue.enabled = true;
+
+        cluePanel = GameObject.Find("NextClueBackground").GetComponent<Image>();
+        cluePanel.enabled = true;
+
+        XButtonClue = GameObject.Find("XButtonClue").GetComponent<Button>();
+        XButtonClue.enabled = true;
+
+        XButtonClueImg = GameObject.Find("XButtonClue").GetComponent<Image>();
+        XButtonClueImg.enabled = true;
     }
 
     public void hideCurrentHint()
