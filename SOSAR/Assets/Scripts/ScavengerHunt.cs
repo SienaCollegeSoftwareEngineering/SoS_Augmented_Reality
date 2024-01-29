@@ -84,14 +84,12 @@ public class ScavengerHunt : MonoBehaviour
     public void SelfTour(){
         pnl = GameObject.Find("RBButtons").GetComponent<Image>();
         pnl.enabled = false;
-        clueText = GameObject.Find("SelfTourButton/SelfTourButtonText").GetComponent<TMP_Text>();
-        clueText.enabled = false;
-        btn = GameObject.Find("SelfTourButton").GetComponent<Button>();
+        
+        btn = GameObject.Find("SelfTourButton").GetComponent<Button>(); 
         btn.enabled = false;
         img = GameObject.Find("SelfTourButton").GetComponent<Image>();
         img.enabled = false;
-        clueText = GameObject.Find("SelfTourButtonText").GetComponent<TMP_Text>();
-        clueText.enabled = false;
+    
         btn = GameObject.Find("ScavengerHuntButton").GetComponent<Button>();
         btn.enabled = false;
         img = GameObject.Find("ScavengerHuntButton").GetComponent<Image>();
@@ -106,14 +104,12 @@ public class ScavengerHunt : MonoBehaviour
     public void ActivateGame(){
         pnl = GameObject.Find("RBButtons").GetComponent<Image>();
         pnl.enabled = false;
-        //clueText = GameObject.Find("SelfTourButtonText").GetComponent<TMP_Text>();
-        //clueText.enabled = false;
+       
         btn = GameObject.Find("SelfTourButton").GetComponent<Button>();
         btn.enabled = false;
         img = GameObject.Find("SelfTourButton").GetComponent<Image>();
         img.enabled = false;
-        //clueText = GameObject.Find("ScavengerHuntButtonText").GetComponent<TMP_Text>();
-        //clueText.enabled = false;
+        
         btn = GameObject.Find("ScavengerHuntButton").GetComponent<Button>();
         btn.enabled = false;
         img = GameObject.Find("ScavengerHuntButton").GetComponent<Image>();
