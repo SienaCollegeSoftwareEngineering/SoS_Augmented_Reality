@@ -126,20 +126,22 @@ public class ScavengerHunt : MonoBehaviour
             pnl.enabled = true; 
             btn = GameObject.Find("ClueButton").GetComponent<Button>();
             btn.enabled = true;
-            clueText = GameObject.Find("ClueButtonText").GetComponent<TMP_Text>();
-            clueText.enabled = true;
             img = GameObject.Find("ClueButton").GetComponent<Image>();
+            img.enabled = true;
+            btn = GameObject.Find("HintButton").GetComponent<Button>();
+            btn.enabled = true;
+            img = GameObject.Find("HintButton").GetComponent<Image>();
             img.enabled = true;
 
         gameStarted = true;
     }
     public void GetCurrentPlaque(string plaqueInfo)
     {
-        //if(gameStarted){
+        if(gameStarted){
             global_PlaqueInfo = plaqueInfo;
             Debug.Log("Check for me: " + global_PlaqueInfo);
             checkPlaque();
-        //}
+        }
 
     }
 
