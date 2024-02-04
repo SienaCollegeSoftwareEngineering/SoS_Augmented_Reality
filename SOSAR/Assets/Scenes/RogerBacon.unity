@@ -33903,10 +33903,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 649248781632071010, guid: 2d1531886f2e18a48bbd9021900a0d13,
+      - m_Target: {fileID: -3874539704027517047, guid: 2d1531886f2e18a48bbd9021900a0d13,
           type: 3}
         m_TargetAssemblyTypeName: ModifyInfoButton, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: goToMoreInfoRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
