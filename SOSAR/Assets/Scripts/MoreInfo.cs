@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
@@ -38,7 +38,7 @@ public class MoreInfo : MonoBehaviour
         moreInfoText.text = ModifyInfoButton.global_TextForNewScene;
         professorNameText.text = ModifyInfoButton.global_ProfNameForNewScene;
         profDepartmentText.text = ModifyInfoButton.global_ProfDepartmentForNewScene;
-        profImage.style.backgroundImage = AssetDatabase.LoadAssetAtPath<Texture2D>(ModifyInfoButton.global_ProfImageForNewScene);
+        //profImage.style.backgroundImage = AssetDatabase.LoadAssetAtPath<Texture2D>(ModifyInfoButton.global_ProfImageForNewScene);
         
     }
 
