@@ -23,6 +23,8 @@ public class ScavengerHunt : MonoBehaviour
     public Button XButton;
     public TMP_Text clueText;
 
+    public TMP_Text tmp;
+
     public TMP_Text coinCounter;
 
     public static string global_PlaqueInfo;
@@ -38,7 +40,9 @@ public class ScavengerHunt : MonoBehaviour
 
     //public List<string> plaqueHints = new List<string> { "Teresco", "Small", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
 
+    //Plaque numbers
     public static string[] plaqueNums = {"RB323","RB313", "RB321", "RB308", "RB311", "RB332", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320","RB338","RB326" };
+    //Plaque Clues
     public static string[] plaqueClues = {
         "This professor teaches Discrete Structures and their office is located near Room 350", 
         "This professor’s favorite class to teach is Database Management Systems and their office is located near Room 328",
@@ -55,6 +59,7 @@ public class ScavengerHunt : MonoBehaviour
         "This professor is the only one to teach Web Design",
         "This professor does research about Natural language processing"
     };
+    //Plaque Hints
     public static string[] plaqueHints = {
         "He is not Jack Armitage", 
         "Their plaque says they attended University of Wisconsin-Madison for their PHD", 
@@ -72,14 +77,16 @@ public class ScavengerHunt : MonoBehaviour
         "He got his masters and bachelors degree from Shandong University"
     };
 
+    //Start current plaque at 0 in the array
     public int current_Plaque = 0;
 
-
+    //Always set current plaque and coin count back to 0 when page is loaded
     void Awake(){
         current_Plaque = 0;
         coinCount = 0;
         
     }
+    //If the use clicks self tour only show components for self tour
 
     public void SelfTour(){
         pnl = GameObject.Find("RBButtons").GetComponent<Image>();
@@ -97,10 +104,27 @@ public class ScavengerHunt : MonoBehaviour
         
         clueText = GameObject.Find("SienaText").GetComponent<TMP_Text>();
         clueText.enabled = false;
+
+       
+        pnl = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
+        pnl.enabled = true;
+        
+        tmp = GameObject.Find("SelfTourDirections").GetComponent<TMP_Text>();
+        tmp.enabled = true;
+
+        XButton = GameObject.Find("DirectionsXButton").GetComponent<Button>();
+        XButton.enabled = true;
+
+        img = GameObject.Find("DirectionsXButton").GetComponent<Image>();
+        img.enabled = true;
+
+        DeactivateGame();
     }
+    //Set game started to false if the game is deativated
     public void DeactivateGame(){
         gameStarted = false;
     }
+    //If user clicks scavenger hunt show those components and start the game
     public void ActivateGame(){
         pnl = GameObject.Find("RBButtons").GetComponent<Image>();
         pnl.enabled = false;
@@ -117,7 +141,7 @@ public class ScavengerHunt : MonoBehaviour
         
         clueText = GameObject.Find("SienaText").GetComponent<TMP_Text>();
         clueText.enabled = false;
-            Debug.Log("Game Activated");
+            
             clueText = GameObject.Find("CoinCounter").GetComponent<TMP_Text>();
             clueText.enabled = true;
             img = GameObject.Find("Coin").GetComponent<Image>();
@@ -132,9 +156,27 @@ public class ScavengerHunt : MonoBehaviour
             btn.enabled = true;
             img = GameObject.Find("HintButton").GetComponent<Image>();
             img.enabled = true;
+            btn = GameObject.Find("AnswerButton").GetComponent<Button>();
+            btn.enabled = true;
+            img = GameObject.Find("AnswerButton").GetComponent<Image>();
+            img.enabled = true;
+
+        pnl = GameObject.Find("DirectionsBackground").GetComponent<Image>();
+        pnl.enabled = true;
+     
+        tmp = GameObject.Find("ScavHuntDirections").GetComponent<TMP_Text>();
+        tmp.enabled = true;
+
+        XButton = GameObject.Find("DirectionsXButton").GetComponent<Button>();
+        XButton.enabled = true;
+
+        img = GameObject.Find("DirectionsXButton").GetComponent<Image>();
+        img.enabled = true;
+       
 
         gameStarted = true;
     }
+    //Get the current plaque the was scanned if the game was started
     public void GetCurrentPlaque(string plaqueInfo)
     {
         if(gameStarted){
@@ -145,6 +187,7 @@ public class ScavengerHunt : MonoBehaviour
 
     }
 
+    //Check if the plaque scanned is correct
     public void checkPlaque()
     {
         Debug.Log("Check for me2: " + global_PlaqueInfo);
@@ -180,7 +223,7 @@ public class ScavengerHunt : MonoBehaviour
             }
         }
     }
-
+    //Get a new plaque for the scavneger hunt
     public void newPlaque()
     {
         //current_Plaque = Random.Range(0, plaqueNums.Count-1);
@@ -190,6 +233,7 @@ public class ScavengerHunt : MonoBehaviour
         Debug.Log(current_Plaque);
     }
 
+    //Display the current hint
     public void displayCurrentHint()
     {
         
@@ -209,6 +253,7 @@ public class ScavengerHunt : MonoBehaviour
         usedHint = true;
     }
 
+    //Display the current clue
     public void displayCurrentClue()
     {
         nextClue = GameObject.Find("NextClue").GetComponent<TMP_Text>();
@@ -225,6 +270,7 @@ public class ScavengerHunt : MonoBehaviour
         XButtonClueImg.enabled = true;
     }
 
+    //Hide the current Hint
     public void hideCurrentHint()
     {
         clueText = GameObject.Find("ClueText").GetComponent<TMP_Text>();
@@ -241,6 +287,7 @@ public class ScavengerHunt : MonoBehaviour
     }
 
 
+    //Set the value of the coin text in the UI to the current value of the coincounter
     public void incrementCoin()
     {
         
@@ -251,6 +298,7 @@ public class ScavengerHunt : MonoBehaviour
         Debug.Log(coinCount);
     }
 
+    //Display the current clue if the clue button is clicked
     public void displayClue()
     {
         nextClue = GameObject.Find("NextClue").GetComponent<TMP_Text>();
@@ -267,6 +315,7 @@ public class ScavengerHunt : MonoBehaviour
         XButtonClueImg.enabled = true;
     }
 
+    //Hide the current clue if the x button is clicked
     public void hideClue(){
         nextClue = GameObject.Find("NextClue").GetComponent<TMP_Text>();
         nextClue.enabled = false;
@@ -279,6 +328,41 @@ public class ScavengerHunt : MonoBehaviour
 
         XButtonClueImg = GameObject.Find("XButtonClue").GetComponent<Image>();
         XButtonClueImg.enabled = false;
+    }
+
+    //Disable all components of the directions
+    public void hideDirections(){
+        pnl = GameObject.Find("DirectionsBackground").GetComponent<Image>();
+        pnl.enabled = false;
+        pnl = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
+        pnl.enabled = false;
+        tmp = GameObject.Find("ScavHuntDirections").GetComponent<TMP_Text>();
+        tmp.enabled = false;
+        tmp = GameObject.Find("SelfTourDirections").GetComponent<TMP_Text>();
+        tmp.enabled = false;
+        XButton = GameObject.Find("DirectionsXButton").GetComponent<Button>();
+        XButton.enabled = false;
+        img = GameObject.Find("DirectionsXButton").GetComponent<Image>();
+        img.enabled = false;
+    }
+
+    public void showDirections(){
+        
+        if(gameStarted){
+            tmp = GameObject.Find("ScavHuntDirections").GetComponent<TMP_Text>();
+            tmp.enabled = true;
+            pnl = GameObject.Find("DirectionsBackground").GetComponent<Image>();
+            pnl.enabled = true;
+        }else{
+            tmp = GameObject.Find("SelfTourDirections").GetComponent<TMP_Text>();
+            tmp.enabled = true;
+            pnl = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
+            pnl.enabled = true;
+        }
+        XButton = GameObject.Find("DirectionsXButton").GetComponent<Button>();
+        XButton.enabled = true;
+        img = GameObject.Find("DirectionsXButton").GetComponent<Image>();
+        img.enabled = true;
     }
     
 }
