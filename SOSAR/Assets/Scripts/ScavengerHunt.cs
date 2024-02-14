@@ -346,6 +346,8 @@ public class ScavengerHunt : MonoBehaviour
         img.enabled = false;
     }
 
+
+    //Show all components of the directions
     public void showDirections(){
         
         if(gameStarted){
