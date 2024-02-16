@@ -35,9 +35,9 @@ public class MoreInfo : MonoBehaviour
         backButton.clicked += () => SceneManager.LoadScene("RogerBacon");
 
         //Update text based on info recieved from ModifyInfoButton script
-        moreInfoText.text = ModifyInfoButton.global_TextForNewScene;
-        professorNameText.text = ModifyInfoButton.global_ProfNameForNewScene;
-        profDepartmentText.text = ModifyInfoButton.global_ProfDepartmentForNewScene;
+        moreInfoText.text = DatabaseConnection.global_TextForNewScene;
+        professorNameText.text = DatabaseConnection.global_ProfNameForNewScene;
+        profDepartmentText.text = DatabaseConnection.global_ProfDepartmentForNewScene;
         //profImage.style.backgroundImage = AssetDatabase.LoadAssetAtPath<Texture2D>(ModifyInfoButton.global_ProfImageForNewScene);
         
     }

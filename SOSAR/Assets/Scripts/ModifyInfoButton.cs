@@ -16,11 +16,14 @@ public class ModifyInfoButton : MonoBehaviour
     public static string global_ProfDepartmentForNewScene;
     public static string global_ProfImageForNewScene;
     public static string global_PlaqueInfo;
+
+    public static string global_RoomNum;
     
     public void changeButtonText(string plaqueInfo) {
         moreInfoButton = GameObject.Find("NewInfoButton").GetComponent<Button>();
         moreInfoButton.interactable = true;
         global_PlaqueInfo = plaqueInfo;
+        global_RoomNum = plaqueInfo;
         Debug.Log(global_PlaqueInfo);
         newText = GameObject.Find("InfoButtonText").GetComponent<TMP_Text>();
         newText.text = "More info";

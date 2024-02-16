@@ -17,6 +17,10 @@ public class DatabaseConnection : MonoBehaviour
 
     public bool pooling = true;
 
+    public static string global_TextForNewScene;
+    public static string global_ProfNameForNewScene;
+
+    public static string global_ProfDepartmentForNewScene;
   
     private string connectionString;
 
@@ -32,12 +36,12 @@ public class DatabaseConnection : MonoBehaviour
 
     private string server = "aws.connect.psdb.cloud";
     private string database = "sosar";
-    private string userId = "zy54coc77i33kmnrk7ts";
+    private string userId = "s8u16mee88p1ffkqjx76";
 
     // private string p1 = "pscale_pw_p5A40vBe4v5NdlK7nSS5TPyYb4uarnKD0Vvt1pjQvEW";
     
-    private string p1 = "pscale_pw_p5A40vBe4v5NdlK7nSS5";
-    private string p2 ="TPyYb4uarnKD0Vvt1pjQvEW";
+    private string p1 = "pscale_pw_bpOIHSrnNz4S1";
+    private string p2 ="gawuda2N1OOvXz3Jz3NBdOpX7CmCgQ";
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -58,7 +62,15 @@ public class DatabaseConnection : MonoBehaviour
             connection.Open();
             Debug.Log("Connection to database successful!");
 
-            string sql = "SELECT * FROM SOSTable";
+
+
+            string sql = string.Format("SELECT * FROM SOSTable WHERE roomnum = {0}", ModifyInfoButton.global_RoomNum);
+            
+            Debug.Log(sql);
+
+            //string.format
+
+            //string sql = "SELECT * FROM SOSTable";
 
             cmd = new MySqlCommand(sql, connection);
 
@@ -67,6 +79,10 @@ public class DatabaseConnection : MonoBehaviour
             while (rdr.Read()){
 			    Debug.Log("???");
 				Debug.Log(rdr[0]+" -- "+rdr[1]);
+
+                global_TextForNewScene = rdr[6].ToString();
+                global_ProfNameForNewScene = rdr[1].ToString() + ". " + rdr[3].ToString();
+                global_ProfDepartmentForNewScene = rdr[5].ToString();
 			}
 			rdr.Close();
 
