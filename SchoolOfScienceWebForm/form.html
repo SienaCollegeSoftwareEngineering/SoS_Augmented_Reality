@@ -23,24 +23,37 @@
                 </div>
             </div>
         </div>
-        <form>
+        <form method="post" action="http://ec2-3-145-62-49.us-east-2.compute.amazonaws.com/processWebForm.php">
             <legend id="form-header" aria-label="Header">School of Science - Change of Information Form</legend>
             <p id="form-instructions" aria-label="Instructions">Please fill out the fields below that have changed and click the submit button on the bottom when you are done.</p>
             <div class="mb-3">
                 <label for="wf_email" class="form-label">Please enter your email address:</label>
-                <input type="email" class="form-control" id="wf_email" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" class="form-control" id="wf_email" aria-describedby="emailHelp" placeholder="Enter email" name="wf_email">
+            </div>
+            
+            <div class="mb-3">
+                <label for="wf_prefix" class="form-label">Please enter your prefix ie: Dr or Prof:</label>
+                <input type="text" class="form-control" id="wf_prefix" aria-describedby="prefixHelp" placeholder="Enter Prefix" name="wf_prefix">
             </div>
             <div class="mb-3">
                 <label for="wf_fname" class="form-label">Please enter your first name:</label>
-                <input type="text" class="form-control" id="wf_fname" placeholder="Enter first name">
+                <input type="text" class="form-control" id="wf_fname" placeholder="Enter first name" name="wf_fname">
             </div>
             <div class="mb-3">
                 <label for="wf_lname" class="form-label">Please enter your last name:</label>
-                <input type="text" class="form-control" id="wf_lname" placeholder="Enter last name">
+                <input type="text" class="form-control" id="wf_lname" placeholder="Enter last name" name="wf_lname">
             </div>
             <div class="mb-3">
-                <label for="wf_about" class="form-label">Please provide a list of classes you have taught or are currently teaching, as well as any hobbies or interests you would like to share:</label>
-                <input type="text" class="form-control" id="wf_about" placeholder="List the classes you teach and some of your hobbies">
+                <label for="wf_suffix" class="form-label">Please enter your Suffux ie: III or SR:</label>
+                <input type="text" class="form-control" id="wf_suffix" aria-describedby="suffixHelp" placeholder="Enter Suffix" name="wf_suffix">
+            </div>
+            <div class="mb-3">
+                <label for="wf_description" class="form-label">Please tell us about youself(This could be a list of classes you teach along with some hobbies you have):</label>
+                <input type="text" class="form-control" id="wf_description" placeholder="List the classes you teach and some of your hobbies" name="wf_description">
+            </div>
+            <div class="mb-3">
+                <label for="wf_departmentName" class="form-label">Please enter your department</label>
+                <input type="text" class="form-control" id="wf_departmentName" placeholder="List the classes you teach and some of your hobbies" name="wf_departmentName">
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="wf_attestation" required>
