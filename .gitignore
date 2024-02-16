@@ -69,3 +69,6 @@ node_modules
 
 #.vscode folder
 .vscode
+
+# .gitignore
+.env
