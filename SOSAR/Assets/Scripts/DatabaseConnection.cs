@@ -36,17 +36,18 @@ public class DatabaseConnection : MonoBehaviour
 
     private string server = "aws.connect.psdb.cloud";
     private string database = "sosar";
-    private string userId = "s8u16mee88p1ffkqjx76";
+    private string userId = "u4dpxa9ii6kwh518h5e5";
 
-    // private string p1 = "pscale_pw_p5A40vBe4v5NdlK7nSS5TPyYb4uarnKD0Vvt1pjQvEW";
     
-    private string p1 = "pscale_pw_bpOIHSrnNz4S1";
-    private string p2 ="gawuda2N1OOvXz3Jz3NBdOpX7CmCgQ";
+    
+    private string p1 = "pscale_pw_cKzR6oY0jB9s9k";
+
+    private string p2 = "15leTeKrzt8nZNwhsYK4xionulXVB";
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
 
-        p1 = p1 + p2;   
+        p1 = p1 + p2;
         connectionString = $"Server={server};Database={database};Uid={userId};Pwd={p1};SslMode={ssl};Pooling=";
         if(pooling)
         {
@@ -64,7 +65,7 @@ public class DatabaseConnection : MonoBehaviour
 
 
 
-            string sql = string.Format("SELECT * FROM SOSTable WHERE roomnum = {0}", ModifyInfoButton.global_RoomNum);
+            string sql = string.Format("SELECT * FROM SOSTable WHERE roomnum = \"{0}\"", ModifyInfoButton.global_RoomNum);
             
             Debug.Log(sql);
 
