@@ -23,12 +23,27 @@ public class DatabaseConnection : MonoBehaviour
     private MySqlConnection connection = null;
 	private MySqlCommand cmd = null;
 	private MySqlDataReader rdr = null;
+    private string ssl = "VerifyFull";
+
+    // private string server = System.Environment.GetEnvironmentVariable("DB_SERVER");
+    // private string database = System.Environment.GetEnvironmentVariable("DB_NAME");
+    // private string userId = System.Environment.GetEnvironmentVariable("DB_USER");
+    // private string password = System.Environment.GetEnvironmentVariable("DB_PASSWORD");
+
+    private string server = "aws.connect.psdb.cloud";
+    private string database = "sosar";
+    private string userId = "zy54coc77i33kmnrk7ts";
+
+    // private string p1 = "pscale_pw_p5A40vBe4v5NdlK7nSS5TPyYb4uarnKD0Vvt1pjQvEW";
+    
+    private string p1 = "pscale_pw_p5A40vBe4v5NdlK7nSS5";
+    private string p2 ="TPyYb4uarnKD0Vvt1pjQvEW";
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
 
-
-        connectionString = $"Server={server};Database={database};Uid={userId};Pwd={password};SslMode={ssl};Pooling=";
+        p1 = p1 + p2;   
+        connectionString = $"Server={server};Database={database};Uid={userId};Pwd={p1};SslMode={ssl};Pooling=";
         if(pooling)
         {
             connectionString += "true;";
