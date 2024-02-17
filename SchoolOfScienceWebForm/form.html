@@ -28,7 +28,7 @@
             <p id="form-instructions" aria-label="Instructions">Please fill out the fields below that have changed and click the submit button on the bottom when you are done.</p>
             <div class="mb-3">
                 <label for="wf_email" class="form-label">Please enter your email address:</label>
-                <input type="email" class="form-control" id="wf_email" aria-describedby="emailHelp" placeholder="Enter email" name="wf_email">
+                <input type="email" class="form-control" id="wf_email" aria-describedby="emailHelp" placeholder="Enter email" name="wf_email" required>
             </div>
             
             <div class="mb-3">
@@ -44,16 +44,16 @@
                 <input type="text" class="form-control" id="wf_lname" placeholder="Enter last name" name="wf_lname">
             </div>
             <div class="mb-3">
-                <label for="wf_suffix" class="form-label">Please enter your Suffux ie: III or SR:</label>
-                <input type="text" class="form-control" id="wf_suffix" aria-describedby="suffixHelp" placeholder="Enter Suffix" name="wf_suffix">
-            </div>
-            <div class="mb-3">
                 <label for="wf_description" class="form-label">Please tell us about youself(This could be a list of classes you teach along with some hobbies you have):</label>
                 <input type="text" class="form-control" id="wf_description" placeholder="List the classes you teach and some of your hobbies" name="wf_description">
             </div>
             <div class="mb-3">
                 <label for="wf_departmentName" class="form-label">Please enter your department</label>
-                <input type="text" class="form-control" id="wf_departmentName" placeholder="List the classes you teach and some of your hobbies" name="wf_departmentName">
+                <input type="text" class="form-control" id="wf_departmentName" placeholder="List your department name here" name="wf_departmentName">
+            </div>
+            <div class="mb-3">
+                <label for="wf_roomnum" class="form-label">Please enter the location of your office in the following format RB###:</label>
+                <input type="text" class="form-control" id="wf_roomnum" aria-describedby="roomHelp" placeholder="Enter office number" name="wf_roomnum">
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="wf_attestation" required>
