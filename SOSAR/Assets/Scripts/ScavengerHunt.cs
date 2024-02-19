@@ -34,6 +34,8 @@ public class ScavengerHunt : MonoBehaviour
     public bool usedHint = false;
 
     public bool gameStarted = true;
+
+    public bool usedAnswer = false; 
     
 
     //public List<string> plaqueNums = new List<string> { "RB308", "RB311", "RB313", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323"};
@@ -64,7 +66,7 @@ public class ScavengerHunt : MonoBehaviour
         "He is not Jack Armitage", 
         "Their plaque says they attended University of Wisconsin-Madison for their PHD", 
         "He is known as the dopey IT guy", 
-        "Their plaque says the love to ski", 
+        "Their plaque says they love to ski", 
         "She has a M.A.T. from Union Graduate College", 
         "He was a professional athlete on the Indian National Rifle Shooting Team", 
         "She loves cooking and distance swimming", 
@@ -76,6 +78,14 @@ public class ScavengerHunt : MonoBehaviour
         "She has been to all 7 continents", 
         "He got his masters and bachelors degree from Shandong University"
     };
+
+    public static string[] plaqueAnswers = {
+        "Mr.James Matthews", "Dr.Scott Vandenberg","Professor Jack Armitage", "Dr.James Teresco", 
+        "Professor Pauline White", "Professor Ninad Chaudhari", "Dr.Robin Flatland", "Dr.Darren Lim",
+        "Dr.Ira Goldstein", "Dr.Sharon Small", "Dr.Jami Cotler", "Dr.Eric Breimer", "Dr. Maryanne Egan",
+         "Dr.Ting Liu"
+    };
+
 
     //Start current plaque at 0 in the array
     public int current_Plaque = 0;
@@ -204,13 +214,21 @@ public class ScavengerHunt : MonoBehaviour
                 }
                 else
                 {
-                    if(usedHint == false)
+                    if(usedHint == false && usedAnswer == false)
                     {
-                        coinCount++;
+                        coinCount+= 2;
                         incrementCoin(); 
                     }
-                    else{
+                    else if(usedHint == true && usedAnswer == false)
+                    {
                         usedHint = false;
+                        coinCount++;
+                        incrementCoin();
+                    }
+                    else
+                    {
+                        usedHint = false;
+                        usedAnswer = false;
                     }
                     
                     newPlaque();
@@ -365,6 +383,41 @@ public class ScavengerHunt : MonoBehaviour
         XButton.enabled = true;
         img = GameObject.Find("DirectionsXButton").GetComponent<Image>();
         img.enabled = true;
+    }
+
+
+    public void displayCurrentAnswer()
+    {
+        clueText = GameObject.Find("AnswerText").GetComponent<TMP_Text>();
+        clueText.enabled = false;
+
+        XButton = GameObject.Find("AnswerXButton").GetComponent<Button>();
+        XButton.enabled = false;
+
+        img = GameObject.Find("AnswerXButton").GetComponent<Image>();
+        img.enabled = false;
+
+        pnl = GameObject.Find("AnswerBackground").GetComponent<Image>();
+        pnl.enabled = false;
+
+        usedAnswer = true;
+
+    }
+
+
+    public void hideCurrentAnswer()
+    {
+        clueText = GameObject.Find("AnswerText").GetComponent<TMP_Text>();
+        clueText.enabled = false;
+
+        XButton = GameObject.Find("AnswerXButton").GetComponent<Button>();
+        XButton.enabled = false;
+
+        img = GameObject.Find("AnswerXButton").GetComponent<Image>();
+        img.enabled = false;
+
+        pnl = GameObject.Find("AnswerBackground").GetComponent<Image>();
+        pnl.enabled = false;
     }
     
 }
