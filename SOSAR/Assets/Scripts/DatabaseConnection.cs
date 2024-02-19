@@ -27,15 +27,13 @@ public class DatabaseConnection : MonoBehaviour
     private MySqlConnection connection = null;
 	private MySqlCommand cmd = null;
 	private MySqlDataReader rdr = null;
+    //SSL verification mode
     private string ssl = "VerifyFull";
-
-    // private string server = System.Environment.GetEnvironmentVariable("DB_SERVER");
-    // private string database = System.Environment.GetEnvironmentVariable("DB_NAME");
-    // private string userId = System.Environment.GetEnvironmentVariable("DB_USER");
-    // private string password = System.Environment.GetEnvironmentVariable("DB_PASSWORD");
-
+    //Server
     private string server = "aws.connect.psdb.cloud";
+    //database name
     private string database = "sosar";
+    //user id
     private string userId = "u4dpxa9ii6kwh518h5e5";
 
     
@@ -43,11 +41,13 @@ public class DatabaseConnection : MonoBehaviour
     private string p1 = "pscale_pw_cKzR6oY0jB9s9k";
 
     private string p2 = "15leTeKrzt8nZNwhsYK4xionulXVB";
+    //Awake is called when the script instance is being loaded, so as soon as script is loaded this runs once to update all information in the scene
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
 
         p1 = p1 + p2;
+        //String to connect to database
         connectionString = $"Server={server};Database={database};Uid={userId};Pwd={p1};SslMode={ssl};Pooling=";
         if(pooling)
         {
@@ -57,6 +57,7 @@ public class DatabaseConnection : MonoBehaviour
         {
             connectionString += "false;";
         }
+        //try connecting to database
         try
         {
             connection = new MySqlConnection(connectionString);
@@ -64,22 +65,21 @@ public class DatabaseConnection : MonoBehaviour
             Debug.Log("Connection to database successful!");
 
 
-
+            //SQL query to get the information for the room
             string sql = string.Format("SELECT * FROM SOSTable WHERE roomnum = \"{0}\"", ModifyInfoButton.global_RoomNum);
             
             Debug.Log(sql);
 
-            //string.format
-
-            //string sql = "SELECT * FROM SOSTable";
-
+            //Make command with the database
             cmd = new MySqlCommand(sql, connection);
 
+            //Read from the command
             rdr = cmd.ExecuteReader();
 
+            //While reading, update the global variables to be used in the more info scene
             while (rdr.Read()){
-			    Debug.Log("???");
-				Debug.Log(rdr[0]+" -- "+rdr[1]);
+			    //Debug.Log("???");
+				//Debug.Log(rdr[0]+" -- "+rdr[1]);
 
                 global_TextForNewScene = rdr[6].ToString();
                 global_ProfNameForNewScene = rdr[1].ToString() + ". " + rdr[3].ToString();
@@ -92,6 +92,9 @@ public class DatabaseConnection : MonoBehaviour
         {
             Debug.Log("Could not connect to database.");
             Debug.Log(ex.Message);
+            global_TextForNewScene = "Failed to load, please retry.";
+            global_ProfNameForNewScene = "";
+            global_ProfDepartmentForNewScene = "";
         }
     }
 
