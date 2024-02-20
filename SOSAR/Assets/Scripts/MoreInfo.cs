@@ -34,7 +34,7 @@ public class MoreInfo : MonoBehaviour
         //When the back button is clicked load the roger bacon scene.
         backButton.clicked += () => SceneManager.LoadScene("RogerBacon");
 
-        //Update text based on info recieved from ModifyInfoButton script
+        //Update text based on info recieved from DatavaseConnection script
         moreInfoText.text = DatabaseConnection.global_TextForNewScene;
         professorNameText.text = DatabaseConnection.global_ProfNameForNewScene;
         profDepartmentText.text = DatabaseConnection.global_ProfDepartmentForNewScene;
@@ -42,9 +42,4 @@ public class MoreInfo : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

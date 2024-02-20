@@ -102,6 +102,7 @@ public class ScavengerHunt : MonoBehaviour
         pnl = GameObject.Find("RBButtons").GetComponent<Image>();
         pnl.enabled = false;
         
+        //Must find the button object and the image object for each button, this is repeated throughout the code
         btn = GameObject.Find("SelfTourButton").GetComponent<Button>(); 
         btn.enabled = false;
         img = GameObject.Find("SelfTourButton").GetComponent<Image>();
@@ -214,24 +215,28 @@ public class ScavengerHunt : MonoBehaviour
                 }
                 else
                 {
+                    //If no hint or answer was used, give 2 points and run the incrementCoin method to display the change in the scene
                     if(usedHint == false && usedAnswer == false)
                     {
                         coinCount+= 2;
                         incrementCoin(); 
                     }
+                    //If a hint was used, give 1 point and run the incrementCoin method to display the change in the scene
                     else if(usedHint == true && usedAnswer == false)
                     {
                         usedHint = false;
                         coinCount++;
                         incrementCoin();
                     }
+                    //If an answer was used, give 0 points
                     else
                     {
                         usedHint = false;
                         usedAnswer = false;
                     }
-                    
+                    //Get the next plaque
                     newPlaque();
+                    //Display the next clue
                     displayClue();
                 }
             }
@@ -241,7 +246,7 @@ public class ScavengerHunt : MonoBehaviour
             }
         }
     }
-    //Get a new plaque for the scavneger hunt
+    //Get a new plaque for the scavenger hunt
     public void newPlaque()
     {
         //current_Plaque = Random.Range(0, plaqueNums.Count-1);
@@ -386,25 +391,28 @@ public class ScavengerHunt : MonoBehaviour
     }
 
 
+    //Shows the current answer when the answer button is clicked
     public void displayCurrentAnswer()
     {
         clueText = GameObject.Find("AnswerText").GetComponent<TMP_Text>();
-        clueText.enabled = false;
+        clueText.text = plaqueAnswers[current_Plaque];
+        clueText.enabled = true;
+        
 
         XButton = GameObject.Find("AnswerXButton").GetComponent<Button>();
-        XButton.enabled = false;
+        XButton.enabled = true;
 
         img = GameObject.Find("AnswerXButton").GetComponent<Image>();
-        img.enabled = false;
+        img.enabled = true;
 
         pnl = GameObject.Find("AnswerBackground").GetComponent<Image>();
-        pnl.enabled = false;
+        pnl.enabled = true;
 
         usedAnswer = true;
 
     }
 
-
+    //Hides the current answer when X button is clicked
     public void hideCurrentAnswer()
     {
         clueText = GameObject.Find("AnswerText").GetComponent<TMP_Text>();

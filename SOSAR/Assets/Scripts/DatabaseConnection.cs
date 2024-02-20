@@ -81,6 +81,7 @@ public class DatabaseConnection : MonoBehaviour
 			    //Debug.Log("???");
 				//Debug.Log(rdr[0]+" -- "+rdr[1]);
 
+                //Get all the information from the database and put them into global variables to be used by the MoreInfo script to update more info scene
                 global_TextForNewScene = rdr[6].ToString();
                 global_ProfNameForNewScene = rdr[1].ToString() + ". " + rdr[3].ToString();
                 global_ProfDepartmentForNewScene = rdr[5].ToString();
@@ -88,6 +89,7 @@ public class DatabaseConnection : MonoBehaviour
 			rdr.Close();
 
         }
+        //If we cant connect to the database, print error message and set global variables to empty strings
         catch (Exception ex)
         {
             Debug.Log("Could not connect to database.");
@@ -98,6 +100,7 @@ public class DatabaseConnection : MonoBehaviour
         }
     }
 
+    //When the application is closed, close the connection to the database
    void onApplicationQuit()
 	{
 		if (connection != null)
