@@ -10,18 +10,15 @@ public class ScavengerHunt : MonoBehaviour
 {
     public Button btn;
 
-    public Image pnl;
+    public Image backgroundPanel;
     public Image img;
 
     public Image XButtonClueImg;
 
     public Button XButtonClue;
 
-    public Image cluePanel;
-
-    public TMP_Text nextClue;
+    public TMP_Text _text;
     public Button XButton;
-    public TMP_Text clueText;
 
     public TMP_Text tmp;
 
@@ -99,8 +96,8 @@ public class ScavengerHunt : MonoBehaviour
     //If the use clicks self tour only show components for self tour
 
     public void SelfTour(){
-        pnl = GameObject.Find("RBButtons").GetComponent<Image>();
-        pnl.enabled = false;
+        backgroundPanel = GameObject.Find("RBButtons").GetComponent<Image>();
+        backgroundPanel.enabled = false;
         
         //Must find the button object and the image object for each button, this is repeated throughout the code
         btn = GameObject.Find("SelfTourButton").GetComponent<Button>(); 
@@ -113,12 +110,12 @@ public class ScavengerHunt : MonoBehaviour
         img = GameObject.Find("ScavengerHuntButton").GetComponent<Image>();
         img.enabled = false;
         
-        clueText = GameObject.Find("SienaText").GetComponent<TMP_Text>();
-        clueText.enabled = false;
+       _text = GameObject.Find("SienaText").GetComponent<TMP_Text>();
+       _text.enabled = false;
 
        
-        pnl = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
-        pnl.enabled = true;
+        backgroundPanel = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
+        backgroundPanel.enabled = true;
         
         tmp = GameObject.Find("SelfTourDirections").GetComponent<TMP_Text>();
         tmp.enabled = true;
@@ -137,8 +134,8 @@ public class ScavengerHunt : MonoBehaviour
     }
     //If user clicks scavenger hunt show those components and start the game
     public void ActivateGame(){
-        pnl = GameObject.Find("RBButtons").GetComponent<Image>();
-        pnl.enabled = false;
+        backgroundPanel = GameObject.Find("RBButtons").GetComponent<Image>();
+        backgroundPanel.enabled = false;
        
         btn = GameObject.Find("SelfTourButton").GetComponent<Button>();
         btn.enabled = false;
@@ -150,15 +147,15 @@ public class ScavengerHunt : MonoBehaviour
         img = GameObject.Find("ScavengerHuntButton").GetComponent<Image>();
         img.enabled = false;
         
-        clueText = GameObject.Find("SienaText").GetComponent<TMP_Text>();
-        clueText.enabled = false;
+       _text = GameObject.Find("SienaText").GetComponent<TMP_Text>();
+       _text.enabled = false;
             
-            clueText = GameObject.Find("CoinCounter").GetComponent<TMP_Text>();
-            clueText.enabled = true;
+           _text = GameObject.Find("CoinCounter").GetComponent<TMP_Text>();
+           _text.enabled = true;
             img = GameObject.Find("Coin").GetComponent<Image>();
             img.enabled = true;
-            pnl = GameObject.Find("CoinBackground").GetComponent<Image>();
-            pnl.enabled = true; 
+            backgroundPanel = GameObject.Find("CoinBackground").GetComponent<Image>();
+            backgroundPanel.enabled = true; 
             btn = GameObject.Find("ClueButton").GetComponent<Button>();
             btn.enabled = true;
             img = GameObject.Find("ClueButton").GetComponent<Image>();
@@ -172,8 +169,8 @@ public class ScavengerHunt : MonoBehaviour
             img = GameObject.Find("AnswerButton").GetComponent<Image>();
             img.enabled = true;
 
-        pnl = GameObject.Find("DirectionsBackground").GetComponent<Image>();
-        pnl.enabled = true;
+        backgroundPanel = GameObject.Find("DirectionsBackground").GetComponent<Image>();
+        backgroundPanel.enabled = true;
      
         tmp = GameObject.Find("ScavHuntDirections").GetComponent<TMP_Text>();
         tmp.enabled = true;
@@ -261,9 +258,9 @@ public class ScavengerHunt : MonoBehaviour
     {
         
 
-        clueText = GameObject.Find("ClueText").GetComponent<TMP_Text>();
-        clueText.enabled = true;
-        clueText.text = plaqueHints[current_Plaque];
+       _text = GameObject.Find("HintText").GetComponent<TMP_Text>();
+       _text.enabled = true;
+       _text.text = plaqueHints[current_Plaque];
 
         XButton = GameObject.Find("XButton").GetComponent<Button>();
         XButton.enabled = true;
@@ -271,20 +268,20 @@ public class ScavengerHunt : MonoBehaviour
         img = GameObject.Find("XButton").GetComponent<Image>();
         img.enabled = true;
 
-        pnl = GameObject.Find("ClueBackground").GetComponent<Image>();
-        pnl.enabled = true;
+        backgroundPanel = GameObject.Find("HintBackground").GetComponent<Image>();
+        backgroundPanel.enabled = true;
         usedHint = true;
     }
 
     //Display the current clue
     public void displayCurrentClue()
     {
-        nextClue = GameObject.Find("NextClue").GetComponent<TMP_Text>();
-        nextClue.text = plaqueClues[current_Plaque];
-        nextClue.enabled = true;
+       _text = GameObject.Find("NextClue").GetComponent<TMP_Text>();
+       _text.text = plaqueClues[current_Plaque];
+       _text.enabled = true;
 
-        cluePanel = GameObject.Find("NextClueBackground").GetComponent<Image>();
-        cluePanel.enabled = true;
+        backgroundPanel = GameObject.Find("NextClueBackground").GetComponent<Image>();
+        backgroundPanel.enabled = true;
 
         XButtonClue = GameObject.Find("XButtonClue").GetComponent<Button>();
         XButtonClue.enabled = true;
@@ -296,8 +293,8 @@ public class ScavengerHunt : MonoBehaviour
     //Hide the current Hint
     public void hideCurrentHint()
     {
-        clueText = GameObject.Find("ClueText").GetComponent<TMP_Text>();
-        clueText.enabled = false;
+       _text = GameObject.Find("HintText").GetComponent<TMP_Text>();
+       _text.enabled = false;
 
         XButton = GameObject.Find("XButton").GetComponent<Button>();
         XButton.enabled = false;
@@ -305,8 +302,8 @@ public class ScavengerHunt : MonoBehaviour
         img = GameObject.Find("XButton").GetComponent<Image>();
         img.enabled = false;
 
-        pnl = GameObject.Find("ClueBackground").GetComponent<Image>();
-        pnl.enabled = false;
+        backgroundPanel = GameObject.Find("HintBackground").GetComponent<Image>();
+        backgroundPanel.enabled = false;
     }
 
 
@@ -324,12 +321,12 @@ public class ScavengerHunt : MonoBehaviour
     //Display the current clue if the clue button is clicked
     public void displayClue()
     {
-        nextClue = GameObject.Find("NextClue").GetComponent<TMP_Text>();
-        nextClue.text = plaqueClues[current_Plaque];
-        nextClue.enabled = true;
+       _text = GameObject.Find("NextClue").GetComponent<TMP_Text>();
+       _text.text = plaqueClues[current_Plaque];
+       _text.enabled = true;
 
-        cluePanel = GameObject.Find("NextClueBackground").GetComponent<Image>();
-        cluePanel.enabled = true;
+        backgroundPanel = GameObject.Find("NextClueBackground").GetComponent<Image>();
+        backgroundPanel.enabled = true;
 
         XButtonClue = GameObject.Find("XButtonClue").GetComponent<Button>();
         XButtonClue.enabled = true;
@@ -340,11 +337,11 @@ public class ScavengerHunt : MonoBehaviour
 
     //Hide the current clue if the x button is clicked
     public void hideClue(){
-        nextClue = GameObject.Find("NextClue").GetComponent<TMP_Text>();
-        nextClue.enabled = false;
+       _text = GameObject.Find("NextClue").GetComponent<TMP_Text>();
+       _text.enabled = false;
 
-        cluePanel = GameObject.Find("NextClueBackground").GetComponent<Image>();
-        cluePanel.enabled = false;
+        backgroundPanel = GameObject.Find("NextClueBackground").GetComponent<Image>();
+        backgroundPanel.enabled = false;
 
         XButtonClue = GameObject.Find("XButtonClue").GetComponent<Button>();
         XButtonClue.enabled = false;
@@ -355,10 +352,10 @@ public class ScavengerHunt : MonoBehaviour
 
     //Disable all components of the directions
     public void hideDirections(){
-        pnl = GameObject.Find("DirectionsBackground").GetComponent<Image>();
-        pnl.enabled = false;
-        pnl = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
-        pnl.enabled = false;
+        backgroundPanel = GameObject.Find("DirectionsBackground").GetComponent<Image>();
+        backgroundPanel.enabled = false;
+        backgroundPanel = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
+        backgroundPanel.enabled = false;
         tmp = GameObject.Find("ScavHuntDirections").GetComponent<TMP_Text>();
         tmp.enabled = false;
         tmp = GameObject.Find("SelfTourDirections").GetComponent<TMP_Text>();
@@ -376,13 +373,13 @@ public class ScavengerHunt : MonoBehaviour
         if(gameStarted){
             tmp = GameObject.Find("ScavHuntDirections").GetComponent<TMP_Text>();
             tmp.enabled = true;
-            pnl = GameObject.Find("DirectionsBackground").GetComponent<Image>();
-            pnl.enabled = true;
+            backgroundPanel = GameObject.Find("DirectionsBackground").GetComponent<Image>();
+            backgroundPanel.enabled = true;
         }else{
             tmp = GameObject.Find("SelfTourDirections").GetComponent<TMP_Text>();
             tmp.enabled = true;
-            pnl = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
-            pnl.enabled = true;
+            backgroundPanel = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
+            backgroundPanel.enabled = true;
         }
         XButton = GameObject.Find("DirectionsXButton").GetComponent<Button>();
         XButton.enabled = true;
@@ -394,9 +391,9 @@ public class ScavengerHunt : MonoBehaviour
     //Shows the current answer when the answer button is clicked
     public void displayCurrentAnswer()
     {
-        clueText = GameObject.Find("AnswerText").GetComponent<TMP_Text>();
-        clueText.text = plaqueAnswers[current_Plaque];
-        clueText.enabled = true;
+       _text = GameObject.Find("AnswerText").GetComponent<TMP_Text>();
+       _text.text = plaqueAnswers[current_Plaque];
+       _text.enabled = true;
         
 
         XButton = GameObject.Find("AnswerXButton").GetComponent<Button>();
@@ -405,8 +402,8 @@ public class ScavengerHunt : MonoBehaviour
         img = GameObject.Find("AnswerXButton").GetComponent<Image>();
         img.enabled = true;
 
-        pnl = GameObject.Find("AnswerBackground").GetComponent<Image>();
-        pnl.enabled = true;
+        backgroundPanel = GameObject.Find("AnswerBackground").GetComponent<Image>();
+        backgroundPanel.enabled = true;
 
         usedAnswer = true;
 
@@ -415,8 +412,8 @@ public class ScavengerHunt : MonoBehaviour
     //Hides the current answer when X button is clicked
     public void hideCurrentAnswer()
     {
-        clueText = GameObject.Find("AnswerText").GetComponent<TMP_Text>();
-        clueText.enabled = false;
+       _text = GameObject.Find("AnswerText").GetComponent<TMP_Text>();
+       _text.enabled = false;
 
         XButton = GameObject.Find("AnswerXButton").GetComponent<Button>();
         XButton.enabled = false;
@@ -424,8 +421,8 @@ public class ScavengerHunt : MonoBehaviour
         img = GameObject.Find("AnswerXButton").GetComponent<Image>();
         img.enabled = false;
 
-        pnl = GameObject.Find("AnswerBackground").GetComponent<Image>();
-        pnl.enabled = false;
+        backgroundPanel = GameObject.Find("AnswerBackground").GetComponent<Image>();
+        backgroundPanel.enabled = false;
     }
     
 }
