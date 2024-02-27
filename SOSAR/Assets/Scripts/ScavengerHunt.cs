@@ -239,6 +239,7 @@ public class ScavengerHunt : MonoBehaviour
             }
             else
             {
+                incorrectPlaque();
                 Debug.Log("Incorrect Plaque");
             }
         }
@@ -424,5 +425,29 @@ public class ScavengerHunt : MonoBehaviour
         backgroundPanel = GameObject.Find("AnswerBackground").GetComponent<Image>();
         backgroundPanel.enabled = false;
     }
+
+    //Displays a popup when the wrong plaque is scanned
+    public void incorrectPlaque(){
+        backgroundPanel = GameObject.Find("IncorrectPlaqueBackground").GetComponent<Image>();
+        backgroundPanel.enabled = true;
+        tmp = GameObject.Find("IncorrectPlaqueText").GetComponent<TMP_Text>();
+        tmp.enabled = true;
+        XButton = GameObject.Find("IncorrectPlaqueXButton").GetComponent<Button>();
+        XButton.enabled = true;
+        img = GameObject.Find("IncorrectPlaqueXButton").GetComponent<Image>();
+        img.enabled = true;
+    }
     
+    public void hideincorrectPlaque(){
+        backgroundPanel = GameObject.Find("IncorrectPlaqueBackground").GetComponent<Image>();
+        if(backgroundPanel.enabled == true){
+            backgroundPanel.enabled = false;
+            tmp = GameObject.Find("IncorrectPlaqueText").GetComponent<TMP_Text>();
+            tmp.enabled = false;
+            XButton = GameObject.Find("IncorrectPlaqueXButton").GetComponent<Button>();
+            XButton.enabled = false;
+            img = GameObject.Find("IncorrectPlaqueXButton").GetComponent<Image>();
+            img.enabled = false;
+        }
+    }
 }
