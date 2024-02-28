@@ -33,6 +33,8 @@ public class ScavengerHunt : MonoBehaviour
     public bool gameStarted = true;
 
     public bool usedAnswer = false; 
+
+    public bool correct;
     
 
     //public List<string> plaqueNums = new List<string> { "RB308", "RB311", "RB313", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323"};
@@ -89,8 +91,6 @@ public class ScavengerHunt : MonoBehaviour
 
     //Always set current plaque and coin count back to 0 when page is loaded
     void Awake(){
-        current_Plaque = 0;
-        coinCount = 0;
         
     }
     //If the use clicks self tour only show components for self tour
@@ -183,6 +183,7 @@ public class ScavengerHunt : MonoBehaviour
        
 
         gameStarted = true;
+        incrementCoin();
     }
     //Get the current plaque the was scanned if the game was started
     public void GetCurrentPlaque(string plaqueInfo)
@@ -203,6 +204,7 @@ public class ScavengerHunt : MonoBehaviour
         {
             if (string.Equals(global_PlaqueInfo, plaqueNums[current_Plaque]))
             {
+                correct = true;
                 Debug.Log("Correct Plaque");
                 //plaqueNums.RemoveAt(current_Plaque);
                 //plaqueHints.RemoveAt(current_Plaque);
@@ -239,9 +241,10 @@ public class ScavengerHunt : MonoBehaviour
             }
             else
             {
-                incorrectPlaque();
+                correct = false;
                 Debug.Log("Incorrect Plaque");
             }
+            showFeedback();
         }
     }
     //Get a new plaque for the scavenger hunt
@@ -313,7 +316,7 @@ public class ScavengerHunt : MonoBehaviour
     {
         
         coinCounter = GameObject.Find("CoinCounter").GetComponent<TMP_Text>();
-    
+        Debug.Log("This checking2:" + coinCount);
         string coinCountText = coinCount.ToString();
         coinCounter.text = coinCountText;
         Debug.Log(coinCount);
@@ -427,26 +430,33 @@ public class ScavengerHunt : MonoBehaviour
     }
 
     //Displays a popup when the wrong plaque is scanned
-    public void incorrectPlaque(){
-        backgroundPanel = GameObject.Find("IncorrectPlaqueBackground").GetComponent<Image>();
+    public void showFeedback(){
+        backgroundPanel = GameObject.Find("FeedbackPlaqueBackground").GetComponent<Image>();
         backgroundPanel.enabled = true;
-        tmp = GameObject.Find("IncorrectPlaqueText").GetComponent<TMP_Text>();
+        tmp = GameObject.Find("FeedbackPlaqueText").GetComponent<TMP_Text>();
         tmp.enabled = true;
-        XButton = GameObject.Find("IncorrectPlaqueXButton").GetComponent<Button>();
+        if(correct){
+            tmp.text = "Correct!";
+            tmp.color = Color.green;
+        }else{
+            tmp.text = "Incorrect Plaque!";
+            tmp.color = Color.red;
+        }
+        XButton = GameObject.Find("FeedbackPlaqueXButton").GetComponent<Button>();
         XButton.enabled = true;
-        img = GameObject.Find("IncorrectPlaqueXButton").GetComponent<Image>();
+        img = GameObject.Find("FeedbackPlaqueXButton").GetComponent<Image>();
         img.enabled = true;
     }
     
-    public void hideincorrectPlaque(){
-        backgroundPanel = GameObject.Find("IncorrectPlaqueBackground").GetComponent<Image>();
+    public void hideFeedback(){
+        backgroundPanel = GameObject.Find("FeedbackPlaqueBackground").GetComponent<Image>();
         if(backgroundPanel.enabled == true){
             backgroundPanel.enabled = false;
-            tmp = GameObject.Find("IncorrectPlaqueText").GetComponent<TMP_Text>();
+            tmp = GameObject.Find("FeedbackPlaqueText").GetComponent<TMP_Text>();
             tmp.enabled = false;
-            XButton = GameObject.Find("IncorrectPlaqueXButton").GetComponent<Button>();
+            XButton = GameObject.Find("FeedbackPlaqueXButton").GetComponent<Button>();
             XButton.enabled = false;
-            img = GameObject.Find("IncorrectPlaqueXButton").GetComponent<Image>();
+            img = GameObject.Find("FeedbackPlaqueXButton").GetComponent<Image>();
             img.enabled = false;
         }
     }

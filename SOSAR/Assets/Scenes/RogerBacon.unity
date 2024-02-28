@@ -1502,7 +1502,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1725,7 +1725,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2569,7 +2569,7 @@ GameObject:
   - component: {fileID: 168537161}
   - component: {fileID: 168537160}
   m_Layer: 5
-  m_Name: IncorrectPlaqueText
+  m_Name: FeedbackPlaqueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2983,7 +2983,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3337,6 +3337,70 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &212615691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212615692}
+  - component: {fileID: 212615693}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &212615692
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212615691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 497249394}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &212615693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212615691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233ff77c5ac48554fb65825f979fd195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 0}
+  backgroundPanel: {fileID: 0}
+  img: {fileID: 0}
+  XButtonClueImg: {fileID: 0}
+  XButtonClue: {fileID: 0}
+  _text: {fileID: 0}
+  XButton: {fileID: 0}
+  tmp: {fileID: 0}
+  coinCounter: {fileID: 0}
+  coinCount: 0
+  usedHint: 0
+  gameStarted: 1
+  usedAnswer: 0
+  correct: 0
+  current_Plaque: 0
 --- !u!1 &222726044
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,7 +4444,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4953,7 +5017,7 @@ GameObject:
   - component: {fileID: 306917907}
   - component: {fileID: 306917906}
   m_Layer: 5
-  m_Name: IncorrectPlaqueBackground
+  m_Name: FeedbackPlaqueBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5211,7 +5275,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6522,7 +6586,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6910,7 +6974,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7654,7 +7718,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7876,7 +7940,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8841,6 +8905,7 @@ RectTransform:
   - {fileID: 306917905}
   - {fileID: 168537159}
   - {fileID: 2146268205}
+  - {fileID: 212615692}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9351,7 +9416,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9850,7 +9915,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10747,7 +10812,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12523,7 +12588,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14241,7 +14306,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14766,7 +14831,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15589,7 +15654,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15811,7 +15876,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16304,7 +16369,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17145,7 +17210,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17367,7 +17432,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17891,7 +17956,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18337,7 +18402,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19255,7 +19320,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20064,7 +20129,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21592,7 +21657,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22650,7 +22715,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23105,7 +23170,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24245,7 +24310,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24965,7 +25030,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25510,7 +25575,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25732,7 +25797,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25998,7 +26063,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26569,7 +26634,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29047,7 +29112,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29269,7 +29334,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29492,7 +29557,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30682,7 +30747,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31317,7 +31382,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33601,7 +33666,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35122,7 +35187,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35344,7 +35409,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35566,7 +35631,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37739,7 +37804,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38475,7 +38540,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38697,7 +38762,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39667,7 +39732,7 @@ MonoBehaviour:
       - m_Target: {fileID: -8907315139195324214, guid: 07abc732e1620b3478223e170aa1c396,
           type: 3}
         m_TargetAssemblyTypeName: ScavengerHunt, Assembly-CSharp
-        m_MethodName: hideincorrectPlaque
+        m_MethodName: hideFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40063,7 +40128,7 @@ GameObject:
   - component: {fileID: 2146268207}
   - component: {fileID: 2146268206}
   m_Layer: 5
-  m_Name: IncorrectPlaqueXButton
+  m_Name: FeedbackPlaqueXButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
