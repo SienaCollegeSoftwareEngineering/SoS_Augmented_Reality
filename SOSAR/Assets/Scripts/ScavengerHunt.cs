@@ -33,6 +33,10 @@ public class ScavengerHunt : MonoBehaviour
     public bool gameStarted = true;
 
     public bool usedAnswer = false; 
+
+    public bool correct;
+
+    public int clickedNext = 0;   
     
 
     //public List<string> plaqueNums = new List<string> { "RB308", "RB311", "RB313", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323"};
@@ -89,8 +93,6 @@ public class ScavengerHunt : MonoBehaviour
 
     //Always set current plaque and coin count back to 0 when page is loaded
     void Awake(){
-        current_Plaque = 0;
-        coinCount = 0;
         
     }
     //If the use clicks self tour only show components for self tour
@@ -169,20 +171,12 @@ public class ScavengerHunt : MonoBehaviour
             img = GameObject.Find("AnswerButton").GetComponent<Image>();
             img.enabled = true;
 
-        backgroundPanel = GameObject.Find("DirectionsBackground").GetComponent<Image>();
-        backgroundPanel.enabled = true;
-     
-        tmp = GameObject.Find("ScavHuntDirections").GetComponent<TMP_Text>();
-        tmp.enabled = true;
-
-        XButton = GameObject.Find("DirectionsXButton").GetComponent<Button>();
-        XButton.enabled = true;
-
-        img = GameObject.Find("DirectionsXButton").GetComponent<Image>();
-        img.enabled = true;
        
 
         gameStarted = true;
+        clickedNext = 0;
+        showDirections();
+        incrementCoin();
     }
     //Get the current plaque the was scanned if the game was started
     public void GetCurrentPlaque(string plaqueInfo)
@@ -203,6 +197,7 @@ public class ScavengerHunt : MonoBehaviour
         {
             if (string.Equals(global_PlaqueInfo, plaqueNums[current_Plaque]))
             {
+                correct = true;
                 Debug.Log("Correct Plaque");
                 //plaqueNums.RemoveAt(current_Plaque);
                 //plaqueHints.RemoveAt(current_Plaque);
@@ -239,8 +234,10 @@ public class ScavengerHunt : MonoBehaviour
             }
             else
             {
+                correct = false;
                 Debug.Log("Incorrect Plaque");
             }
+            showFeedback();
         }
     }
     //Get a new plaque for the scavenger hunt
@@ -312,7 +309,7 @@ public class ScavengerHunt : MonoBehaviour
     {
         
         coinCounter = GameObject.Find("CoinCounter").GetComponent<TMP_Text>();
-    
+        Debug.Log("This checking2:" + coinCount);
         string coinCountText = coinCount.ToString();
         coinCounter.text = coinCountText;
         Debug.Log(coinCount);
@@ -352,14 +349,10 @@ public class ScavengerHunt : MonoBehaviour
 
     //Disable all components of the directions
     public void hideDirections(){
-        backgroundPanel = GameObject.Find("DirectionsBackground").GetComponent<Image>();
-        backgroundPanel.enabled = false;
-        backgroundPanel = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
-        backgroundPanel.enabled = false;
-        tmp = GameObject.Find("ScavHuntDirections").GetComponent<TMP_Text>();
-        tmp.enabled = false;
         tmp = GameObject.Find("SelfTourDirections").GetComponent<TMP_Text>();
         tmp.enabled = false;
+        img = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
+        img.enabled = false;
         XButton = GameObject.Find("DirectionsXButton").GetComponent<Button>();
         XButton.enabled = false;
         img = GameObject.Find("DirectionsXButton").GetComponent<Image>();
@@ -371,20 +364,21 @@ public class ScavengerHunt : MonoBehaviour
     public void showDirections(){
         
         if(gameStarted){
-            tmp = GameObject.Find("ScavHuntDirections").GetComponent<TMP_Text>();
-            tmp.enabled = true;
-            backgroundPanel = GameObject.Find("DirectionsBackground").GetComponent<Image>();
-            backgroundPanel.enabled = true;
+            clickedNext = 0;
+            tmp = GameObject.Find("ScavHuntDirections2").GetComponent<TMP_Text>();
+            tmp.text = "Here are some buttons to use while you play. Clue is given to you for free";
+            showScavHuntDirections1();
         }else{
             tmp = GameObject.Find("SelfTourDirections").GetComponent<TMP_Text>();
             tmp.enabled = true;
             backgroundPanel = GameObject.Find("DirectionsBackgroundSelfTour").GetComponent<Image>();
             backgroundPanel.enabled = true;
+            XButton = GameObject.Find("DirectionsXButton").GetComponent<Button>();
+            XButton.enabled = true;
+            img = GameObject.Find("DirectionsXButton").GetComponent<Image>();
+            img.enabled = true;
         }
-        XButton = GameObject.Find("DirectionsXButton").GetComponent<Button>();
-        XButton.enabled = true;
-        img = GameObject.Find("DirectionsXButton").GetComponent<Image>();
-        img.enabled = true;
+        
     }
 
 
@@ -424,5 +418,146 @@ public class ScavengerHunt : MonoBehaviour
         backgroundPanel = GameObject.Find("AnswerBackground").GetComponent<Image>();
         backgroundPanel.enabled = false;
     }
+
+    //Displays a popup when the wrong plaque is scanned
+    public void showFeedback(){
+        backgroundPanel = GameObject.Find("FeedbackPlaqueBackground").GetComponent<Image>();
+        backgroundPanel.enabled = true;
+        tmp = GameObject.Find("FeedbackPlaqueText").GetComponent<TMP_Text>();
+        tmp.enabled = true;
+        if(correct){
+            tmp.text = "Correct!";
+            tmp.color = Color.green;
+        }else{
+            tmp.text = "Incorrect Plaque!";
+            tmp.color = Color.red;
+        }
+        XButton = GameObject.Find("FeedbackPlaqueXButton").GetComponent<Button>();
+        XButton.enabled = true;
+        img = GameObject.Find("FeedbackPlaqueXButton").GetComponent<Image>();
+        img.enabled = true;
+    }
     
+    public void hideFeedback(){
+        backgroundPanel = GameObject.Find("FeedbackPlaqueBackground").GetComponent<Image>();
+        if(backgroundPanel.enabled == true){
+            backgroundPanel.enabled = false;
+            tmp = GameObject.Find("FeedbackPlaqueText").GetComponent<TMP_Text>();
+            tmp.enabled = false;
+            XButton = GameObject.Find("FeedbackPlaqueXButton").GetComponent<Button>();
+            XButton.enabled = false;
+            img = GameObject.Find("FeedbackPlaqueXButton").GetComponent<Image>();
+            img.enabled = false;
+        }
+    }
+
+    public void showScavHuntDirections1(){
+        btn = GameObject.Find("HelpButton").GetComponent<Button>();
+        btn.enabled = false;
+        tmp = GameObject.Find("ScavHuntDirections1").GetComponent<TMP_Text>();
+        tmp.enabled = true;
+        backgroundPanel = GameObject.Find("ScavHuntDirectionsBackground1").GetComponent<Image>();
+        backgroundPanel.enabled = true;
+        btn = GameObject.Find("NextButton1").GetComponent<Button>();
+        btn.enabled = true;
+        img = GameObject.Find("NextButton1").GetComponent<Image>();
+        img.enabled = true;
+        btn = GameObject.Find("SkipButton").GetComponent<Button>();
+        btn.enabled = true;
+        img = GameObject.Find("SkipButton").GetComponent<Image>();
+        img.enabled = true;
+    }
+
+    public void showScavHuntDirections2(){
+        //Hide the current directions
+        tmp = GameObject.Find("ScavHuntDirections1").GetComponent<TMP_Text>();
+        tmp.enabled = false;
+        backgroundPanel = GameObject.Find("ScavHuntDirectionsBackground1").GetComponent<Image>();
+        backgroundPanel.enabled = false;
+        btn = GameObject.Find("NextButton1").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("NextButton1").GetComponent<Image>();
+        img.enabled = false;
+        btn = GameObject.Find("SkipButton").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("SkipButton").GetComponent<Image>();
+        img.enabled = false;
+
+        //Show the next directions
+        tmp = GameObject.Find("ScavHuntDirections2").GetComponent<TMP_Text>();
+        tmp.enabled = true;
+        backgroundPanel = GameObject.Find("ScavHuntDirectionsBackground2").GetComponent<Image>();
+        backgroundPanel.enabled = true;
+        btn = GameObject.Find("NextButton2").GetComponent<Button>();
+        btn.enabled = true;
+        img = GameObject.Find("NextButton2").GetComponent<Image>();
+        img.enabled = true;
+        
+    }
+
+    public void changeDirectionsText(){
+        //Change text of current directions
+        tmp = GameObject.Find("ScavHuntDirections2").GetComponent<TMP_Text>();
+        if(clickedNext == 0){
+            tmp.text = "The hint button can be used for additional help. This takes away 1 point.";
+            clickedNext++;
+        }else if(clickedNext == 1){
+            tmp.text = "The answer button can be used for the answer to the current plaque. This takes away 2 points.";
+            clickedNext++;
+        }else if(clickedNext == 2){
+            showScavHuntDirections3();
+        }   
+    }
+
+    public void showScavHuntDirections3(){
+        //Hide the current directions
+        tmp = GameObject.Find("ScavHuntDirections2").GetComponent<TMP_Text>();
+        tmp.enabled = false;
+        backgroundPanel = GameObject.Find("ScavHuntDirectionsBackground2").GetComponent<Image>();
+        backgroundPanel.enabled = false;
+        btn = GameObject.Find("NextButton2").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("NextButton2").GetComponent<Image>();
+        img.enabled = false;
+
+        //Show the next directions
+        tmp = GameObject.Find("ScavHuntDirections3").GetComponent<TMP_Text>();
+        tmp.enabled = true;
+        backgroundPanel = GameObject.Find("ScavHuntDirectionsBackground3").GetComponent<Image>();
+        backgroundPanel.enabled = true;
+        btn = GameObject.Find("NextButton3").GetComponent<Button>();
+        btn.enabled = true;
+        img = GameObject.Find("NextButton3").GetComponent<Image>();
+        img.enabled = true;
+    }
+
+    public void hideScavHuntDirections3(){
+        tmp = GameObject.Find("ScavHuntDirections3").GetComponent<TMP_Text>();
+        tmp.enabled = false;
+        backgroundPanel = GameObject.Find("ScavHuntDirectionsBackground3").GetComponent<Image>();
+        backgroundPanel.enabled = false;
+        btn = GameObject.Find("NextButton3").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("NextButton3").GetComponent<Image>();
+        img.enabled = false; 
+        btn = GameObject.Find("HelpButton").GetComponent<Button>();
+        btn.enabled = true;   
+    }
+
+    public void hideScavHuntDirections1(){
+        tmp = GameObject.Find("ScavHuntDirections1").GetComponent<TMP_Text>();
+        tmp.enabled = false;
+        backgroundPanel = GameObject.Find("ScavHuntDirectionsBackground1").GetComponent<Image>();
+        backgroundPanel.enabled = false;
+        btn = GameObject.Find("NextButton1").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("NextButton1").GetComponent<Image>();
+        img.enabled = false;
+        btn = GameObject.Find("SkipButton").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("SkipButton").GetComponent<Image>();
+        img.enabled = false;
+        btn = GameObject.Find("HelpButton").GetComponent<Button>();
+        btn.enabled = true;
+    }
 }

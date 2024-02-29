@@ -94,7 +94,8 @@ public class DatabaseConnection : MonoBehaviour
         {
             Debug.Log("Could not connect to database.");
             Debug.Log(ex.Message);
-            global_TextForNewScene = "Failed to load, please retry.";
+            //global_TextForNewScene = "Failed to load, please retry.";
+            global_TextForNewScene += ex.Message;
             global_ProfNameForNewScene = "";
             global_ProfDepartmentForNewScene = "";
         }
