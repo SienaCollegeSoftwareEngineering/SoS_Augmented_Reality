@@ -8,7 +8,9 @@ using UnityEngine.SceneManagement;
 public class MoreInfo : MonoBehaviour
 {
     public MoreInfo moreInfo;
-
+    public string TextForNewScene;
+    public string ProfNameForNewScene;
+    public string ProfDepartmentForNewScene;
     /*
      * On Awake, make the object persistent
      */
@@ -20,8 +22,20 @@ public class MoreInfo : MonoBehaviour
     /*
     * Start is called before the first frame update
     */
-    void Start()
+    IEnumerator Start()
     {
+        WWWForm form = new WWWForm();
+        string test = "RB319";
+        form.AddField("roomNumber", test);
+        
+        WWW request = new WWW("https://soswebform.uk.r.appspot.com/getData.php", form);
+        
+
+        yield return request;
+        TextForNewScene = request.text;
+        Debug.Log(request.text);
+       
+        
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
         
         //Get the elements of the UI
@@ -35,9 +49,9 @@ public class MoreInfo : MonoBehaviour
         backButton.clicked += () => SceneManager.LoadScene("RogerBacon");
 
         //Update text based on info recieved from DatavaseConnection script
-        moreInfoText.text = DatabaseConnection.global_TextForNewScene;
-        professorNameText.text = DatabaseConnection.global_ProfNameForNewScene;
-        profDepartmentText.text = DatabaseConnection.global_ProfDepartmentForNewScene;
+        moreInfoText.text = TextForNewScene;
+        professorNameText.text = ProfNameForNewScene;
+        profDepartmentText.text = ProfDepartmentForNewScene;
         //profImage.style.backgroundImage = AssetDatabase.LoadAssetAtPath<Texture2D>(ModifyInfoButton.global_ProfImageForNewScene);
         
     }
