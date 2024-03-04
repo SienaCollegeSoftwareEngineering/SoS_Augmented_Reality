@@ -25,14 +25,41 @@ public class MoreInfo : MonoBehaviour
     IEnumerator Start()
     {
         WWWForm form = new WWWForm();
-        string test = "RB319";
-        form.AddField("roomNumber", test);
+        // string test = "RB319";
+        form.AddField("roomNumber", ModifyInfoButton.global_RoomNum);
         
         WWW request = new WWW("https://soswebform.uk.r.appspot.com/getData.php", form);
         
 
         yield return request;
-        TextForNewScene = request.text;
+        
+        // int indexOf = Str.IndexOf(request.text, " ");
+        
+        string str = request.text;
+        str= str.Replace("Array", "");
+        str= str.Replace("(", "");
+        str= str.Replace(")", "");
+        str= str.Replace("[email]", "");
+        str= str.Replace("[prefix]", "");
+        str= str.Replace("[fname]", "");
+        str= str.Replace("[lname]", "");
+        str= str.Replace("[department]", "");
+        str= str.Replace("[description]", "");
+        str= str.Replace("[roomnum]", "");
+        str= str.Replace("=", "");
+        str= str.Replace("\n", "");
+        str= str.Replace("\r", "");
+
+        string[] data = str.Split('>');
+        //  Debug.Log(data.ToString());
+        foreach(string item in data){
+            Debug.Log(item);
+        }
+    
+        ProfNameForNewScene = data[2].Replace(" ","")+" "+data[3].Replace(" ","")+" "+data[4].Replace(" ","");
+        ProfDepartmentForNewScene = data[6];
+        TextForNewScene = data[7];
+        // TextForNewScene = request.text;
         Debug.Log(request.text);
        
         
