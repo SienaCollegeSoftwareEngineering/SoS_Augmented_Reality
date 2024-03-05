@@ -27,4 +27,9 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("InfoScreen");
     }
 
+    public void OpenURL()
+    {
+        Application.OpenURL("https://soswebform.uk.r.appspot.com/PrivacyPolicy.php");
+    }
+
 }

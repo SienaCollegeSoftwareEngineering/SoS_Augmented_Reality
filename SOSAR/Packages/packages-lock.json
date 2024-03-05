@@ -1,9 +1,9 @@
 {
   "dependencies": {
     "com.ptc.vuforia.engine": {
-      "version": "file:package",
+      "version": "file:com.ptc.vuforia.engine-10.14.4.tgz",
       "depth": 0,
-      "source": "embedded",
+      "source": "local-tarball",
       "dependencies": {
         "com.unity.ugui": "1.0.0"
       }
