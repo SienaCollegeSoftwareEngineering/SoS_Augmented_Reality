@@ -13,7 +13,7 @@ public class ModifyInfoButton : MonoBehaviour
     public static string global_ProfImageForNewScene;
     public static string global_PlaqueInfo;
 
-    public static string global_RoomNum;
+    public static string global_RoomNum = "RB308";
     
     //Changing the text of the button to "More info" and getting the roomNum for new scene
     public void changeButtonText(string plaqueInfo) {
