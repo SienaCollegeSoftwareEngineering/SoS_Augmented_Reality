@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quick Links Scene.unity
     guid: 4d88cfdf019c54f2db6cc11253e767af
+  - enabled: 1
+    path: Assets/Scenes/ProfessorLinks.unity
+    guid: 3798302f93f4e3943b175affb44d8268
+  - enabled: 1
+    path: Assets/Scenes/ClassroomLinks.unity
+    guid: 916622027f1a9f749a7dfd8d13b1216b
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

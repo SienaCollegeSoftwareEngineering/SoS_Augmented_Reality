@@ -111,6 +111,11 @@ public class ScavengerHunt : MonoBehaviour
         btn.enabled = false;
         img = GameObject.Find("ScavengerHuntButton").GetComponent<Image>();
         img.enabled = false;
+
+        btn = GameObject.Find("QuickLinksButton").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("QuickLinksButton").GetComponent<Image>();
+        img.enabled = false;
         
        _text = GameObject.Find("SienaText").GetComponent<TMP_Text>();
        _text.enabled = false;
@@ -147,6 +152,11 @@ public class ScavengerHunt : MonoBehaviour
         btn = GameObject.Find("ScavengerHuntButton").GetComponent<Button>();
         btn.enabled = false;
         img = GameObject.Find("ScavengerHuntButton").GetComponent<Image>();
+        img.enabled = false;
+
+        btn = GameObject.Find("QuickLinksButton").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("QuickLinksButton").GetComponent<Image>();
         img.enabled = false;
         
        _text = GameObject.Find("SienaText").GetComponent<TMP_Text>();

@@ -797,7 +797,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -3249856962796321613, guid: 19b427a9dbc9fcf418af09685c77c274,
+      - m_Target: {fileID: -3249856962796321613, guid: 1c3bad64779dcd749b3ce8a20f13e11f,
           type: 3}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ChangeScene
