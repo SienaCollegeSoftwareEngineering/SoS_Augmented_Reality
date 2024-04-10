@@ -478,10 +478,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -1358963212876222738, guid: 19b427a9dbc9fcf418af09685c77c274,
-          type: 3}
+      - m_Target: {fileID: 11500000, guid: 64efedd93d6738d41a595b72cee6535d, type: 3}
         m_TargetAssemblyTypeName: Dropdown, Assembly-CSharp
-        m_MethodName: getSelectedValue
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

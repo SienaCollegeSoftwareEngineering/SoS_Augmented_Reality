@@ -138,6 +138,32 @@ public class ScavengerHunt : MonoBehaviour
     //Set game started to false if the game is deativated
     public void DeactivateGame(){
         gameStarted = false;
+        
+    }
+
+    public void back(){
+        backgroundPanel = GameObject.Find("RBButtons").GetComponent<Image>();
+        backgroundPanel.enabled = true;
+        
+        //Must find the button object and the image object for each button, this is repeated throughout the code
+        btn = GameObject.Find("SelfTourButton").GetComponent<Button>(); 
+        btn.enabled = true;
+        img = GameObject.Find("SelfTourButton").GetComponent<Image>();
+        img.enabled = true;
+    
+        btn = GameObject.Find("ScavengerHuntButton").GetComponent<Button>();
+        btn.enabled = true;
+        img = GameObject.Find("ScavengerHuntButton").GetComponent<Image>();
+        img.enabled = true;
+
+        btn = GameObject.Find("QuickLinksButton").GetComponent<Button>();
+        btn.enabled = true;
+        img = GameObject.Find("QuickLinksButton").GetComponent<Image>();
+        img.enabled = true;
+        
+       _text = GameObject.Find("SienaText").GetComponent<TMP_Text>();
+       _text.enabled = true;
+       ModifyInfoButton.global_scavHuntStarted = false;
     }
     //If user clicks scavenger hunt show those components and start the game
     public void ActivateGame(){
@@ -182,7 +208,7 @@ public class ScavengerHunt : MonoBehaviour
             img.enabled = true;
 
        
-
+        ModifyInfoButton.global_scavHuntStarted = true;
         gameStarted = true;
         clickedNext = 0;
         showDirections();

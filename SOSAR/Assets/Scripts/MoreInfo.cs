@@ -73,7 +73,7 @@ public class MoreInfo : MonoBehaviour
         IMGUIContainer profImage = root.Q<IMGUIContainer>("ProfImage");
 
         //When the back button is clicked load the roger bacon scene.
-        backButton.clicked += () => SceneManager.LoadScene("RogerBacon");
+        backButton.clicked += () => SceneManager.LoadScene(Dropdown.global_whereFrom);
 
         //Update text based on info recieved from DatavaseConnection script
         moreInfoText.text = TextForNewScene;

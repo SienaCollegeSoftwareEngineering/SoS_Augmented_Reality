@@ -14,18 +14,30 @@ public class ModifyInfoButton : MonoBehaviour
     public static string global_PlaqueInfo;
 
     public static string global_RoomNum = "RB308";
+
+    public static bool global_scavHuntStarted = false;
     
     //Changing the text of the button to "More info" and getting the roomNum for new scene
+
     public void changeButtonText(string plaqueInfo) {
-        moreInfoButton = GameObject.Find("NewInfoButton").GetComponent<Button>();
-        moreInfoButton.interactable = true;
+        
         global_PlaqueInfo = plaqueInfo;
         global_RoomNum = plaqueInfo;
         Debug.Log(global_PlaqueInfo);
-        newText = GameObject.Find("InfoButtonText").GetComponent<TMP_Text>();
-        newText.text = "More info";
-        Debug.Log(newText.text);
+        if(!global_scavHuntStarted){
+            moreInfoButton = GameObject.Find("NewInfoButton").GetComponent<Button>();
+            moreInfoButton.interactable = true;
+            newText = GameObject.Find("InfoButtonText").GetComponent<TMP_Text>();
+            newText.text = "More info";
+            Debug.Log(newText.text);
+        }else{
+            newText = GameObject.Find("InfoButtonText").GetComponent<TMP_Text>();
+            newText.text = "Unavailable";
+            Debug.Log(newText.text);
+        }   
+        
     }
+    
 
     //Disabling button and changing text back to "Waiting..."
     public void disableButton() {
@@ -40,6 +52,7 @@ public class ModifyInfoButton : MonoBehaviour
         Debug.Log("Going to " + global_PlaqueInfo);
         
         //Change scene to more info scene
+        Dropdown.global_whereFrom = "RogerBacon";
         SceneManager.LoadScene("More Info Scene");
     }
     

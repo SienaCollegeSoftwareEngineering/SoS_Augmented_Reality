@@ -472,7 +472,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: -1358963212876222738, guid: 19b427a9dbc9fcf418af09685c77c274,
           type: 3}
-        m_TargetAssemblyTypeName: Dropdown, Assembly-CSharp
+        m_TargetAssemblyTypeName: Dropdown_Menu, Assembly-CSharp
         m_MethodName: getSelectedValue
         m_Mode: 0
         m_Arguments:
