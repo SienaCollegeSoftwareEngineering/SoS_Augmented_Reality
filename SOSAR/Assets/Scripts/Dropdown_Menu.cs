@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 
 
-public class Dropdown : MonoBehaviour
+public class Dropdown_Menu : MonoBehaviour
 
 
 {
@@ -14,28 +14,21 @@ public class Dropdown : MonoBehaviour
     public static string global_whereFrom;
     int value;
     public string selectedValue;
-    public void getSelectedValue(int val)
+    public void call(string whereFrom, string room)
     {
-        value = val;
+        goToNewScene(whereFrom, room);
     }
 
-    public void changeScene(string whereFrom)
+    public void goToNewScene(string whereFrom, string room)
     {
 
-        
+        global_whereFrom = whereFrom;
 
-        string[] professors = {"None", "RB308", "RB311", "RB313", "RB314", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323", "RB326", "RB332", "RB338"};
+        //string[] professors = {"None", "RB308", "RB311", "RB313", "RB314", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323", "RB326", "RB332", "RB338"};
 
-        string[] classrooms = {"None", "RB302", "RB304", "RB306", "RB312", "RB322", "RB324", "RB328", "RB340", "RB348", "RB350"};
+        //string[] classrooms = {"None", "RB302", "RB304", "RB306", "RB312", "RB322", "RB324", "RB328", "RB340", "RB348", "RB350"};
 
-        if(whereFrom == "Professors"){
-            selectedValue = professors[value];
-            global_whereFrom = "ProfessorLinks";
-        }
-        else{
-            selectedValue = classrooms[value];
-            global_whereFrom = "ClassroomLinks";
-        }
+        selectedValue = room;
 
         ModifyInfoButton.global_RoomNum = selectedValue;
         if(value != 0){

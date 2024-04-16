@@ -52,7 +52,7 @@ public class ModifyInfoButton : MonoBehaviour
         Debug.Log("Going to " + global_PlaqueInfo);
         
         //Change scene to more info scene
-        Dropdown.global_whereFrom = "RogerBacon";
+        Dropdown_Menu.global_whereFrom = "RogerBacon";
         SceneManager.LoadScene("More Info Scene");
     }
     
