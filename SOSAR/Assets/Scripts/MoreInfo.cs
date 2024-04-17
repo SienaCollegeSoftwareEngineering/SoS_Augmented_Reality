@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 //using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MoreInfo : MonoBehaviour
 {
@@ -63,25 +65,37 @@ public class MoreInfo : MonoBehaviour
         Debug.Log(request.text);
        
         
-        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+        //VisualElement root = GetComponent<UIDocument>().rootVisualElement;
         
         //Get the elements of the UI
-        Button backButton = root.Q<Button>("backButton");
-        Label moreInfoText = root.Q<Label>("InfoText");
-        Label professorNameText = root.Q<Label>("ProfName");
-        Label profDepartmentText = root.Q<Label>("ProfDepartment");
-        IMGUIContainer profImage = root.Q<IMGUIContainer>("ProfImage");
+        //Button backButton = root.Q<Button>("backButton");
+        //Label moreInfoText = root.Q<Label>("InfoText");
+        //Label professorNameText = root.Q<Label>("ProfName");
+        //Label profDepartmentText = root.Q<Label>("ProfDepartment");
+        //IMGUIContainer profImage = root.Q<IMGUIContainer>("ProfImage");
 
         //When the back button is clicked load the roger bacon scene.
 
-        backButton.clicked += () => SceneManager.LoadScene(ClassroomMenu.global_whereFrom);
+        //backButton.clicked += () => SceneManager.LoadScene(ClassroomMenu.global_whereFrom);
 
         //Update text based on info recieved from DatavaseConnection script
-        moreInfoText.text = TextForNewScene;
-        professorNameText.text = ProfNameForNewScene;
-        profDepartmentText.text = ProfDepartmentForNewScene;
+        //moreInfoText.text = TextForNewScene;
+        //professorNameText.text = ProfNameForNewScene;
+        //profDepartmentText.text = ProfDepartmentForNewScene;
         //profImage.style.backgroundImage = AssetDatabase.LoadAssetAtPath<Texture2D>(ModifyInfoButton.global_ProfImageForNewScene);
+
+        GameObject.Find("Content").GetComponent<TMP_Text>().text = TextForNewScene;
+        GameObject.Find("ProfessorName").GetComponent<TMP_Text>().text = ProfNameForNewScene;
+        GameObject.Find("Department").GetComponent<TMP_Text>().text = ProfDepartmentForNewScene;
         
+    }
+
+    public void BackButton()
+    {
+        SceneManager.LoadScene(ClassroomMenu.global_whereFrom);
+        GameObject.Find("Content").GetComponent<TMP_Text>().text = "";
+        GameObject.Find("ProfessorName").GetComponent<TMP_Text>().text = "Loading";
+        GameObject.Find("Department").GetComponent<TMP_Text>().text = "";
     }
 
 }
