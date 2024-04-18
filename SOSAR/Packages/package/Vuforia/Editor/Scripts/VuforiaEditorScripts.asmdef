@@ -1,0 +1,26 @@
+{
+    "name": "VuforiaEditorScripts",
+    "rootNamespace": "",
+    "references": [
+        "VuforiaScripts",
+        "Unity.XR.Management",
+        "Unity.XR.Management.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.management",
+            "expression": "0.0.1",
+            "define": "UNITY_XR_MANAGEMENT"
+        }
+    ],
+    "noEngineReferences": false
+}
