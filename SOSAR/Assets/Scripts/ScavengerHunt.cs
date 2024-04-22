@@ -520,6 +520,8 @@ public class ScavengerHunt : MonoBehaviour
 
     //Displays a popup when the wrong plaque is scanned
     public void showFeedback(){
+        if (gameStarted){
+            
         backgroundPanel = GameObject.Find("FeedbackPlaqueBackground").GetComponent<Image>();
         backgroundPanel.enabled = true;
         tmp = GameObject.Find("FeedbackPlaqueText").GetComponent<TMP_Text>();
@@ -535,6 +537,7 @@ public class ScavengerHunt : MonoBehaviour
         XButton.enabled = true;
         img = GameObject.Find("FeedbackPlaqueXButton").GetComponent<Image>();
         img.enabled = true;
+        }
     }
     
     //Hides the feedback given after scanning a plaque
