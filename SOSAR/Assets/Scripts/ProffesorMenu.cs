@@ -9,13 +9,10 @@ public class ProffesorMenu : MonoBehaviour
     //public static string global_whereFrom;
     public void goToNewScene(string roomNum)
     {
+        //Tells the more info scene where we came from
 
         ClassroomMenu.global_whereFrom = "ProfessorLinks";
-
-        //string[] professors = {"None", "RB308", "RB311", "RB313", "RB314", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323", "RB326", "RB332", "RB338"};
-
-        //string[] classrooms = {"None", "RB302", "RB304", "RB306", "RB312", "RB322", "RB324", "RB328", "RB340", "RB348", "RB350"};
-
+        //Sets the selected value to the room number
         selectedValue = roomNum;
 
         ModifyInfoButton.global_RoomNum = selectedValue;

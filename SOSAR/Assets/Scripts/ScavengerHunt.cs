@@ -8,41 +8,51 @@ using TMPro;
 
 public class ScavengerHunt : MonoBehaviour
 {
+    //Temporary Button used for any time we need to get a button from the UI
     public Button btn;
 
     public Image backgroundPanel;
+    //Tempary image used for the any time we need to get an image from the UI
     public Image img;
 
+    //X button image
     public Image XButtonClueImg;
 
+    //Xbutton for the clue
     public Button XButtonClue;
 
+    //Another temporary text used for the any time we need to get text from the UI
     public TMP_Text _text;
+    //X button for different pop ups
     public Button XButton;
 
+    //Temporary text used for the any time we need to get text from the UI
     public TMP_Text tmp;
 
+    //The coin counter text for the game
     public TMP_Text coinCounter;
 
+    //The global variable for the plaques info that says the room number
     public static string global_PlaqueInfo;
 
+    //The coin counter for the game
     public int coinCount = 0;
 
+    //Checks if user used hint
     public bool usedHint = false;
 
+    //Checks if the game has started
     public bool gameStarted = true;
 
+    //Used to check if the user used the answer
     public bool usedAnswer = false; 
 
+    //Checks if the plaque scanned is correct
     public bool correct;
 
+    //Used for the directions to know which part of the directions the user is on
     public int clickedNext = 0;   
     
-
-    //public List<string> plaqueNums = new List<string> { "RB308", "RB311", "RB313", "RB314", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320", "RB321", "RB323"};
-
-    //public List<string> plaqueHints = new List<string> { "Teresco", "Small", "Vandenberg", "DiTursi", "Flatland", "Lim", "Goldstein", "Small", "Cotler", "Breimer", "Armitage", "Matthews"};
-
     //Plaque numbers
     public static string[] plaqueNums = {"RB323","RB313", "RB321", "RB308", "RB311", "RB332", "RB315", "RB316", "RB317", "RB318", "RB319", "RB320","RB338","RB326" };
     //Plaque Clues
@@ -91,12 +101,8 @@ public class ScavengerHunt : MonoBehaviour
     //Start current plaque at 0 in the array
     public int current_Plaque = 0;
 
-    //Always set current plaque and coin count back to 0 when page is loaded
-    void Awake(){
-        
-    }
-    //If the use clicks self tour only show components for self tour
-
+    
+    //If the user clicks self tour only show components for self tour
     public void SelfTour(){
         backgroundPanel = GameObject.Find("RBButtons").GetComponent<Image>();
         backgroundPanel.enabled = false;
@@ -141,6 +147,7 @@ public class ScavengerHunt : MonoBehaviour
         
     }
 
+    //Goes back to the menu
     public void back(){
         backgroundPanel = GameObject.Find("RBButtons").GetComponent<Image>();
         backgroundPanel.enabled = true;
@@ -474,6 +481,7 @@ public class ScavengerHunt : MonoBehaviour
         img.enabled = true;
     }
     
+    //Hides the feedback given after scanning a plaque
     public void hideFeedback(){
         backgroundPanel = GameObject.Find("FeedbackPlaqueBackground").GetComponent<Image>();
         if(backgroundPanel.enabled == true){
@@ -487,6 +495,7 @@ public class ScavengerHunt : MonoBehaviour
         }
     }
 
+    //Shows the first part of the scavenger hunt directions
     public void showScavHuntDirections1(){
         btn = GameObject.Find("HelpButton").GetComponent<Button>();
         btn.enabled = false;
@@ -504,6 +513,7 @@ public class ScavengerHunt : MonoBehaviour
         img.enabled = true;
     }
 
+    //Shows the second part of the scavenger hunt directions
     public void showScavHuntDirections2(){
         //Hide the current directions
         tmp = GameObject.Find("ScavHuntDirections1").GetComponent<TMP_Text>();
@@ -531,6 +541,7 @@ public class ScavengerHunt : MonoBehaviour
         
     }
 
+    //Changes the text of the second directions when the next button is clicked
     public void changeDirectionsText(){
         //Change text of current directions
         tmp = GameObject.Find("ScavHuntDirections2").GetComponent<TMP_Text>();
@@ -545,6 +556,7 @@ public class ScavengerHunt : MonoBehaviour
         }   
     }
 
+    //Shows the third part of the scavenger hunt directions
     public void showScavHuntDirections3(){
         //Hide the current directions
         tmp = GameObject.Find("ScavHuntDirections2").GetComponent<TMP_Text>();
@@ -567,6 +579,7 @@ public class ScavengerHunt : MonoBehaviour
         img.enabled = true;
     }
 
+    //Hides the third part of the scavenger hunt directions
     public void hideScavHuntDirections3(){
         tmp = GameObject.Find("ScavHuntDirections3").GetComponent<TMP_Text>();
         tmp.enabled = false;
@@ -580,6 +593,7 @@ public class ScavengerHunt : MonoBehaviour
         btn.enabled = true;   
     }
 
+    //Hides the first part of the scavenger hunt directions
     public void hideScavHuntDirections1(){
         tmp = GameObject.Find("ScavHuntDirections1").GetComponent<TMP_Text>();
         tmp.enabled = false;

@@ -7,17 +7,20 @@ using TMPro;
 
 public class ModifyInfoButton : MonoBehaviour
 {
+    //The more info Button on the bottom right of the scene
     public Button moreInfoButton;
+    //The text for the button
     public TMP_Text newText;
-    public TextMeshProUGUI buttonLabel;
-    public static string global_ProfImageForNewScene;
+    //The global variable for the plaques info that says the room number
     public static string global_PlaqueInfo;
 
-    public static string global_RoomNum = "RB308";
+    //Also a global variable for the room number used in other scripts
+    public static string global_RoomNum;
 
+    //Check if scavenger hunt has started to determine if the moreInfoButton will be enabled
     public static bool global_scavHuntStarted = false;
     
-    //Changing the text of the button to "More info" and getting the roomNum for new scene
+    //Changing the text of the button to "More info" if the scavengerhunt isnt started, otherwise change to "Unavailable" and getting the roomNum for new scene
 
     public void changeButtonText(string plaqueInfo) {
         
@@ -48,11 +51,12 @@ public class ModifyInfoButton : MonoBehaviour
         }
     }
 
+    //What is triggered when more info button is clicked, sends user to more info scene
     public void goToMoreInfoRoom() {
         Debug.Log("Going to " + global_PlaqueInfo);
         
         //Change scene to more info scene
-        Dropdown_Menu.global_whereFrom = "RogerBacon";
+        ClassroomMenu.global_whereFrom = "RogerBacon";
         SceneManager.LoadScene("More Info Scene");
     }
     
