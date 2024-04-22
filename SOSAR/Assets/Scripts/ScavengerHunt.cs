@@ -153,6 +153,63 @@ public class ScavengerHunt : MonoBehaviour
         backgroundPanel.enabled = true;
         
         //Must find the button object and the image object for each button, this is repeated throughout the code
+        
+        
+       _text = GameObject.Find("SienaText").GetComponent<TMP_Text>();
+       _text.enabled = true;
+       ModifyInfoButton.global_scavHuntStarted = false;
+       
+            
+           _text = GameObject.Find("CoinCounter").GetComponent<TMP_Text>();
+           _text.enabled = false;
+            img = GameObject.Find("Coin").GetComponent<Image>();
+            img.enabled = false;
+            backgroundPanel = GameObject.Find("CoinBackground").GetComponent<Image>();
+            backgroundPanel.enabled = false; 
+            btn = GameObject.Find("ClueButton").GetComponent<Button>();
+            btn.enabled = false;
+            img = GameObject.Find("ClueButton").GetComponent<Image>();
+            img.enabled = false;
+            btn = GameObject.Find("HintButton").GetComponent<Button>();
+            btn.enabled = false;
+            img = GameObject.Find("HintButton").GetComponent<Image>();
+            img.enabled = false;
+            btn = GameObject.Find("AnswerButton").GetComponent<Button>();
+            btn.enabled = false;
+            img = GameObject.Find("AnswerButton").GetComponent<Image>();
+            img.enabled = false;
+
+            tmp = GameObject.Find("ScavHuntDirections1").GetComponent<TMP_Text>();
+        tmp.enabled = false;
+        backgroundPanel = GameObject.Find("ScavHuntDirectionsBackground1").GetComponent<Image>();
+        backgroundPanel.enabled = false;
+        btn = GameObject.Find("NextButton1").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("NextButton1").GetComponent<Image>();
+        img.enabled = false;
+        btn = GameObject.Find("SkipButton").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("SkipButton").GetComponent<Image>();
+        img.enabled = false;
+        tmp = GameObject.Find("ScavHuntDirections3").GetComponent<TMP_Text>();
+        tmp.enabled = false;
+        backgroundPanel = GameObject.Find("ScavHuntDirectionsBackground3").GetComponent<Image>();
+        backgroundPanel.enabled = false;
+        btn = GameObject.Find("NextButton3").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("NextButton3").GetComponent<Image>();
+        img.enabled = false; 
+        btn = GameObject.Find("HelpButton").GetComponent<Button>();
+        btn.enabled = true;   
+        tmp = GameObject.Find("ScavHuntDirections2").GetComponent<TMP_Text>();
+        tmp.enabled = false;
+        backgroundPanel = GameObject.Find("ScavHuntDirectionsBackground2").GetComponent<Image>();
+        backgroundPanel.enabled = false;
+        btn = GameObject.Find("NextButton2").GetComponent<Button>();
+        btn.enabled = false;
+        img = GameObject.Find("NextButton2").GetComponent<Image>();
+        img.enabled = false;
+
         btn = GameObject.Find("SelfTourButton").GetComponent<Button>(); 
         btn.enabled = true;
         img = GameObject.Find("SelfTourButton").GetComponent<Image>();
@@ -167,10 +224,9 @@ public class ScavengerHunt : MonoBehaviour
         btn.enabled = true;
         img = GameObject.Find("QuickLinksButton").GetComponent<Image>();
         img.enabled = true;
-        
-       _text = GameObject.Find("SienaText").GetComponent<TMP_Text>();
-       _text.enabled = true;
-       ModifyInfoButton.global_scavHuntStarted = false;
+        backgroundPanel = GameObject.Find("RBButtons").GetComponent<Image>();
+        backgroundPanel.enabled = true;
+
     }
     //If user clicks scavenger hunt show those components and start the game
     public void ActivateGame(){

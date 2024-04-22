@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public bool global_accessibilityEnabled = true;
     public void LoadCameraScene()
     {
         Debug.Log("Load Camera Scene");
@@ -30,6 +31,11 @@ public class ChangeScene : MonoBehaviour
     public void OpenURL()
     {
         Application.OpenURL("https://soswebform.uk.r.appspot.com/PrivacyPolicy.php");
+    }
+
+    public void disableAccessibility()
+    {
+        UAP_AccessibilityManager.EnableAccessibility(false);	
     }
 
 }

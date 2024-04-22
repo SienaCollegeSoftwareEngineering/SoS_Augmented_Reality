@@ -257,10 +257,23 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 73146648}
+  m_TargetGraphic: {fileID: 200063061}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -7034069895583894451, guid: 2bd529d7c5912944199955c63fca0075,
+          type: 3}
+        m_TargetAssemblyTypeName: ProffesorMenu, Assembly-CSharp
+        m_MethodName: goToNewScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: RB338
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &73146648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,7 +554,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: RB319
+          m_StringArgument: RB320
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &96227180
@@ -4222,7 +4235,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: RB320
+          m_StringArgument: RB326
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1053523570
@@ -5458,6 +5471,7 @@ GameObject:
   - component: {fileID: 1474351469}
   - component: {fileID: 1474351468}
   - component: {fileID: 1474351472}
+  - component: {fileID: 1474351473}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5577,6 +5591,18 @@ MonoBehaviour:
   m_ConstrainToContainerRight: 0
   m_AllowTouchExplore: 1
   m_DoubleCheckUIElementsPositions: 1
+--- !u!114 &1474351473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474351467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11fd338d75b68bb4ea7808ff38d48fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1493017642
 GameObject:
   m_ObjectHideFlags: 0
@@ -6127,7 +6153,7 @@ MonoBehaviour:
   m_PrefixIsLocalizationKey: 0
   m_PrefixIsPostFix: 0
   m_FilterText: 1
-  m_Text: Dr. Teresco
+  m_Text: Professor Chaudhari
   m_NameLabel: {fileID: 312947118}
   m_AdditionalNameLabels: []
   m_TestList: []
@@ -6187,10 +6213,23 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1773087028}
+  m_TargetGraphic: {fileID: 200063061}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -7034069895583894451, guid: 2bd529d7c5912944199955c63fca0075,
+          type: 3}
+        m_TargetAssemblyTypeName: ProffesorMenu, Assembly-CSharp
+        m_MethodName: goToNewScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: RB332
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1773087028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6751,8 +6790,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11475380, guid: 89f4a0ae7ea3fa84ea56c91291d7bd87, type: 3}
-      propertyPath: m_EditorEnabledState
+      propertyPath: m_SaveEnabledState
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475380, guid: 89f4a0ae7ea3fa84ea56c91291d7bd87, type: 3}
+      propertyPath: m_EditorEnabledState
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4973883477652662, guid: 89f4a0ae7ea3fa84ea56c91291d7bd87, type: 3}
       propertyPath: m_RootOrder
